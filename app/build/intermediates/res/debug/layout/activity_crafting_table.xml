@@ -17,11 +17,13 @@
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:id="@+id/top_left"
             android:src="@drawable/white"
         />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:id="@+id/top_center"
             android:src="@drawable/white"
          />
         <ImageButton
@@ -67,13 +69,18 @@
         android:layout_alignTop="@+id/gridLayout"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/right_arrow"/>
+        />
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:id="@+id/imageButton2"
         android:layout_alignTop="@+id/right_arrow"
         android:layout_toRightOf="@+id/gridLayout"
-        android:layout_toEndOf="@+id/gridLayout" />
+        android:layout_toEndOf="@+id/gridLayout"
+        android:src="@drawable/right_arrow"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="1dp"
+        />
 </RelativeLayout>
 <!-- From: file:/Users/Marion/AndroidStudioProjects/MinecraftChecker/app/src/main/res/layout/activity_crafting_table.xml -->

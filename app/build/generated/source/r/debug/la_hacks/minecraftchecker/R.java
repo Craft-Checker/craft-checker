@@ -1327,7 +1327,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090042;
+        public static final int action_settings=0x7f090044;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
@@ -1348,7 +1348,7 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090018;
         public static final int image=0x7f090023;
-        public static final int imageButton2=0x7f090041;
+        public static final int imageButton2=0x7f090043;
         public static final int listMode=0x7f090009;
         public static final int list_item=0x7f090025;
         public static final int middle=0x7f090015;
@@ -1358,7 +1358,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f090005;
         public static final int progress_horizontal=0x7f090006;
         public static final int radio=0x7f09002b;
-        public static final int right_arrow=0x7f090040;
+        public static final int right_arrow=0x7f090042;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;
@@ -1377,6 +1377,8 @@ containing a value of this type.
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000b;
         public static final int title=0x7f090027;
+        public static final int top_center=0x7f090041;
+        public static final int top_left=0x7f090040;
         public static final int up=0x7f090008;
         public static final int useLogo=0x7f090012;
         public static final int withText=0x7f09001a;
