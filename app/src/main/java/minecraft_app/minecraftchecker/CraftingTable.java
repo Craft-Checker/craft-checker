@@ -1,12 +1,15 @@
-package la_hacks.minecraftchecker;
+package minecraft_app.minecraftchecker;
 
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import la_hacks.minecraftchecker.R;
 
-public class CraftingTable extends ActionBarActivity {
+
+public class CraftingTable extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
