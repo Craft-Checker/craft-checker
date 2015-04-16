@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CraftingTable">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CraftingTable"
+    android:background="#000000">
 
     <GridLayout
         android:layout_marginTop="30dp"
@@ -13,55 +14,84 @@
         android:rowCount="3"
         android:orientation="horizontal"
         android:id="@+id/gridLayout">
-
+<!--No need for buttons, make these image views later since images will be dragged and dropped-->
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:id="@+id/top_left"
-            android:src="@drawable/white"
-        />
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"/>
+            <!--Possible way to tint later on: android:tint="@color/accent_material_dark"-->
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:id="@+id/top_center"
-            android:src="@drawable/white"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
          />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/white"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/white"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/white"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/white"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/white"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
             />
 
     </GridLayout>
-    <ImageButton
+    <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:id="@+id/right_arrow"
@@ -69,8 +99,12 @@
         android:layout_alignTop="@+id/gridLayout"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:src="@drawable/box"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="1dp"
         />
-    <ImageButton
+    <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:id="@+id/imageButton2"
@@ -81,6 +115,73 @@
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:padding="1dp"
-        />
+        android:tint="@color/accent_material_dark" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/button"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_alignTop="@+id/gridLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Building/Decor"
+        android:id="@+id/button2"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redstone/Transport"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food/Brewing"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tools/Combat"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materials/Misc"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+    <!--android:button="@drawable/box"-->
 </RelativeLayout>
 <!-- From: file:/Users/Marion/AndroidStudioProjects/MinecraftChecker/app/src/main/res/layout/activity_crafting_table.xml -->

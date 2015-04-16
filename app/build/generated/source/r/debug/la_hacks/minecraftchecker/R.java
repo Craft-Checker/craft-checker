@@ -1310,8 +1310,8 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020034;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020035;
         public static final int abc_textfield_search_material=0x7f020036;
-        public static final int right_arrow=0x7f020037;
-        public static final int white=0x7f020038;
+        public static final int box=0x7f020037;
+        public static final int right_arrow=0x7f020038;
     }
     public static final class id {
         public static final int action_bar=0x7f090031;
@@ -1327,10 +1327,16 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090044;
+        public static final int action_settings=0x7f09004a;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
+        public static final int button=0x7f090044;
+        public static final int button2=0x7f090045;
+        public static final int button3=0x7f090046;
+        public static final int button4=0x7f090047;
+        public static final int button5=0x7f090048;
+        public static final int button6=0x7f090049;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090017;
         public static final int decor_content_parent=0x7f09002f;
