@@ -94,7 +94,7 @@
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:id="@+id/right_arrow"
+        android:id="@+id/result"
         android:layout_marginTop="61dp"
         android:layout_alignTop="@+id/gridLayout"
         android:layout_alignParentRight="true"
@@ -107,8 +107,8 @@
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:id="@+id/imageButton2"
-        android:layout_alignTop="@+id/right_arrow"
+        android:id="@+id/right_arrow"
+        android:layout_alignTop="@+id/result"
         android:layout_toRightOf="@+id/gridLayout"
         android:layout_toEndOf="@+id/gridLayout"
         android:src="@drawable/right_arrow"
@@ -122,7 +122,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CLEAR"
-        android:id="@+id/button"
+        android:background="@color/green"
+        android:textColor="@color/black"
+        android:id="@+id/clear"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:layout_alignTop="@+id/gridLayout"
@@ -133,19 +135,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Building/Decor"
-        android:id="@+id/button2"
+        android:id="@+id/building_decor"
         android:layout_below="@+id/gridLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:layout_alignRight="@+id/redstone_transport"
+        android:layout_alignEnd="@+id/redstone_transport" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Redstone/Transport"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
+        android:id="@+id/redstone_transport"
+        android:layout_below="@+id/building_decor"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -153,114 +155,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Food/Brewing"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
+        android:id="@+id/food_brewing"
+        android:layout_below="@+id/redstone_transport"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:layout_alignRight="@+id/redstone_transport"
+        android:layout_alignEnd="@+id/redstone_transport" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tools/Combat"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
+        android:id="@+id/tools_combat"
+        android:layout_below="@+id/food_brewing"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
+        android:layout_alignRight="@+id/food_brewing"
+        android:layout_alignEnd="@+id/food_brewing" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Materials/Misc"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
+        android:id="@+id/materials_misc"
+        android:layout_below="@+id/tools_combat"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button5"
-        android:layout_alignEnd="@+id/button5" />
+        android:layout_alignRight="@+id/tools_combat"
+        android:layout_alignEnd="@+id/tools_combat" />
 
-    <GridLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:columnCount="2"
+    <ListView
+        android:id="@+id/listViewForCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/building_decor"
+        android:layout_toRightOf="@+id/building_decor"
+        android:layout_toEndOf="@+id/building_decor"
+        android:layout_alignBottom="@+id/materials_misc">
 
-        android:orientation="horizontal"
-        android:id="@+id/gridLayout2"
-        android:layout_below="@+id/gridLayout"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2"
-        android:layout_alignBottom="@+id/button6">
-        <!--No need for buttons, make these image views later since images will be dragged and dropped-->
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:id="@+id/top_left2"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"/>
-        <!--Possible way to tint later on: android:tint="@color/accent_material_dark"-->
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:id="@+id/top_center2"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/box"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            />
-
-    </GridLayout>
+    </ListView>
 </RelativeLayout>
 <!-- From: file:/Users/Marion/AndroidStudioProjects/MinecraftChecker/app/src/main/res/layout/activity_crafting_table.xml -->

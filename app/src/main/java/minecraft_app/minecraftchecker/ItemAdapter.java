@@ -3,6 +3,10 @@ package minecraft_app.minecraftchecker;
 import android.widget.ArrayAdapter;
 import android.content.Context;
 import java.util.ArrayList;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 import la_hacks.minecraftchecker.R;  // Need this because refactoring apparently didn't work
 
 /**
@@ -17,5 +21,12 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         super(context, R.layout.crafting_item, items);
         this.context = context;
         this.items = items;
+    }
+    public View getView(final int position, View convertView, ViewGroup parent) {
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.crafting_item, parent, false);
+        ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
+        imageView.setImageResource(items.get(position).getImageRes());
+        return view;
     }
 }

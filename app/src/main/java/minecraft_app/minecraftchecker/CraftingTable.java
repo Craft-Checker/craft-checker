@@ -5,25 +5,126 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 import la_hacks.minecraftchecker.R;
 
 
 public class CraftingTable extends Activity {
 
+    private ArrayList<Item> buildingDecorItems;
+    private ArrayList<Item> redstoneTransportItems;
+    private ArrayList<Item> foodBrewingItems;
+    private ArrayList<Item> toolsCombatItems;
+    private ArrayList<Item> materialsMiscItems;
+    private ItemAdapter buildingDecorAdapter;
+    private ItemAdapter redstoneTransportAdapter;
+    private ItemAdapter foodBrewingAdapter;
+    private ItemAdapter toolsCombatAdapter;
+    private ItemAdapter materialMiscAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crafting_table);
 
-        // init every UI widget you need to use
+    // Populating lists that will appear when buttons are clicked
+        buildingDecorItems = new ArrayList<Item>();
+        redstoneTransportItems = new ArrayList<Item>();
+        foodBrewingItems = new ArrayList<Item>();
+        toolsCombatItems = new ArrayList<Item>();
+        materialsMiscItems = new ArrayList<Item>();
+    // Building/Decor
+        buildingDecorItems.add(new Item(R.drawable.cobblestone));
+        buildingDecorItems.add(new Item(R.drawable.stone));
+        buildingDecorItems.add(new Item(R.drawable.dirt));
+        buildingDecorItems.add(new Item(R.drawable.sand));
+        buildingDecorItems.add(new Item(R.drawable.wood));
+        buildingDecorItems.add(new Item(R.drawable.glass));
 
-//R.drawable.box
+    // Redstone/Transportation
+        redstoneTransportItems.add(new Item(R.drawable.redstone_dust));
+        redstoneTransportItems.add(new Item(R.drawable.redstone_torch));
+        redstoneTransportItems.add(new Item(R.drawable.redstone_repeater));
+        redstoneTransportItems.add(new Item(R.drawable.rails));
+        redstoneTransportItems.add(new Item(R.drawable.powered_rail));
+        redstoneTransportItems.add(new Item(R.drawable.boat));
 
-        // 1. Add a button onclick listener for one of the buttons
+    // Food/Brewing
+        foodBrewingItems.add(new Item(R.drawable.bread));
+        foodBrewingItems.add(new Item(R.drawable.steak));
+        foodBrewingItems.add(new Item(R.drawable.cookie));
+        foodBrewingItems.add(new Item(R.drawable.carrot));
+        foodBrewingItems.add(new Item(R.drawable.potato));
+        foodBrewingItems.add(new Item(R.drawable.glass_bottle));
 
-        // 2. Inside the button onclick listener
-        //
+    // Tools/Combat
+        toolsCombatItems.add(new Item(R.drawable.iron_helmet));
+        toolsCombatItems.add(new Item(R.drawable.iron_chestplate));
+        toolsCombatItems.add(new Item(R.drawable.iron_leggings));
+        toolsCombatItems.add(new Item(R.drawable.iron_boots));
+        toolsCombatItems.add(new Item(R.drawable.diamond_helmet));
+        toolsCombatItems.add(new Item(R.drawable.diamond_chestplate));
+        toolsCombatItems.add(new Item(R.drawable.diamond_leggings));
+        toolsCombatItems.add(new Item(R.drawable.diamond_boots));
+
+    // Materials/Misc
+        materialsMiscItems.add(new Item(R.drawable.coal));
+        materialsMiscItems.add(new Item(R.drawable.stick));
+        materialsMiscItems.add(new Item(R.drawable.leather));
+        materialsMiscItems.add(new Item(R.drawable.iron));
+        materialsMiscItems.add(new Item(R.drawable.gold));
+        materialsMiscItems.add(new Item(R.drawable.diamond));
+
+        buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);
+        redstoneTransportAdapter = new ItemAdapter(this, redstoneTransportItems);
+        foodBrewingAdapter = new ItemAdapter(this, foodBrewingItems);
+        toolsCombatAdapter = new ItemAdapter(this, toolsCombatItems);
+        materialMiscAdapter =  new ItemAdapter(this, materialsMiscItems);
+
+        // Button listeners:
+
+        final ListView list = (ListView)findViewById(R.id.listViewForCategory);
+        list.setAdapter(buildingDecorAdapter); // default for now, later default will be blank
+        Button buildingDecorButton = (Button) findViewById(R.id.building_decor);
+        buildingDecorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                list.setAdapter(buildingDecorAdapter);
+            }
+        });
+        Button redstoneTransportButton = (Button) findViewById(R.id.redstone_transport);
+        redstoneTransportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                list.setAdapter(redstoneTransportAdapter);
+            }
+        });
+        Button foodBrewingButton = (Button) findViewById(R.id.food_brewing);
+        foodBrewingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                list.setAdapter(foodBrewingAdapter);
+            }
+        });
+        Button toolsCombatButton = (Button) findViewById(R.id.tools_combat);
+        toolsCombatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                list.setAdapter(toolsCombatAdapter);
+            }
+        });
+        Button materialsMiscButton = (Button) findViewById(R.id.materials_misc);
+        materialsMiscButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                list.setAdapter(materialMiscAdapter);
+            }
+        });
     }
 
 
