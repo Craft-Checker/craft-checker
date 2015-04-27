@@ -182,5 +182,14 @@
         android:layout_alignRight="@+id/button5"
         android:layout_alignEnd="@+id/button5" />
 
-    <!--android:button="@drawable/box"-->
+    <ListView
+        android:id="@+id/listViewForCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_alignBottom="@+id/button6">
+
+    </ListView>
 </RelativeLayout>

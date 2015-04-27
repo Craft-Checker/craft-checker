@@ -1327,7 +1327,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f09004a;
+        public static final int action_settings=0x7f09004d;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
@@ -1349,6 +1349,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f090022;
         public static final int expanded_menu=0x7f090028;
         public static final int gridLayout=0x7f09003f;
+        public static final int gridLayout2=0x7f09004a;
         public static final int home=0x7f090004;
         public static final int homeAsUp=0x7f09000d;
         public static final int icon=0x7f090026;
@@ -1384,7 +1385,9 @@ containing a value of this type.
         public static final int tabMode=0x7f09000b;
         public static final int title=0x7f090027;
         public static final int top_center=0x7f090041;
+        public static final int top_center2=0x7f09004c;
         public static final int top_left=0x7f090040;
+        public static final int top_left2=0x7f09004b;
         public static final int up=0x7f090008;
         public static final int useLogo=0x7f090012;
         public static final int withText=0x7f09001a;

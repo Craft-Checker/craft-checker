@@ -15,6 +15,15 @@ public class CraftingTable extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crafting_table);
+
+        // init every UI widget you need to use
+
+//R.drawable.box
+
+        // 1. Add a button onclick listener for one of the buttons
+
+        // 2. Inside the button onclick listener
+        //
     }
 
 

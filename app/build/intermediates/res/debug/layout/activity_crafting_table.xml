@@ -182,6 +182,85 @@
         android:layout_alignRight="@+id/button5"
         android:layout_alignEnd="@+id/button5" />
 
-    <!--android:button="@drawable/box"-->
+    <GridLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:columnCount="2"
+
+        android:orientation="horizontal"
+        android:id="@+id/gridLayout2"
+        android:layout_below="@+id/gridLayout"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_alignBottom="@+id/button6">
+        <!--No need for buttons, make these image views later since images will be dragged and dropped-->
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/top_left2"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"/>
+        <!--Possible way to tint later on: android:tint="@color/accent_material_dark"-->
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/top_center2"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/box"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            />
+
+    </GridLayout>
 </RelativeLayout>
 <!-- From: file:/Users/Marion/AndroidStudioProjects/MinecraftChecker/app/src/main/res/layout/activity_crafting_table.xml -->
