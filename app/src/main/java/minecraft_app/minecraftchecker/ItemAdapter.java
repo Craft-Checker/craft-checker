@@ -1,5 +1,7 @@
 package minecraft_app.minecraftchecker;
 
+import android.content.ClipData;
+import android.content.ClipDescription;
 import android.widget.ArrayAdapter;
 import android.content.Context;
 import java.util.ArrayList;
@@ -16,6 +18,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
     private Context context;
     private ArrayList<Item> items;
+    private static final String IMAGEVIEW_TAG = "icon bitmap";
 
     public ItemAdapter(Context context, ArrayList<Item> items) {
         super(context, R.layout.crafting_item, items);
@@ -25,8 +28,19 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     public View getView(final int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.crafting_item, parent, false);
-        ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
+        final ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
         imageView.setImageResource(items.get(position).getImageRes());
+        imageView.setTag(IMAGEVIEW_TAG);
+        imageView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                String[] mimeType = {ClipDescription.MIMETYPE_TEXT_PLAIN};
+                ClipData.Item item = new ClipData.Item((CharSequence)IMAGEVIEW_TAG);
+                ClipData dragData = new ClipData((CharSequence)v.getTag(), mimeType, item);
+                View.DragShadowBuilder myShadow = new MyDragShadowBuilder(imageView);
+                return v.startDrag(dragData, myShadow, null, 0);
+            }
+        });
         return view;
     }
 }
