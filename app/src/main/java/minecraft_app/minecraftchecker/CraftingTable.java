@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -126,6 +127,34 @@ public class CraftingTable extends Activity {
                 list.setAdapter(materialMiscAdapter);
             }
         });
+
+        // Crafting table drop listeners
+        ImageView topLeft = (ImageView)findViewById(R.id.top_left);
+        topLeft.setOnDragListener(new MyDragEventListener());
+
+        ImageView topCenter = (ImageView)findViewById(R.id.top_center);
+        topCenter.setOnDragListener(new MyDragEventListener());
+
+        ImageView topRight = (ImageView)findViewById(R.id.top_right);
+        topRight.setOnDragListener(new MyDragEventListener());
+
+        ImageView left = (ImageView)findViewById(R.id.left);
+        left.setOnDragListener(new MyDragEventListener());
+
+        ImageView center = (ImageView)findViewById(R.id.center);
+        center.setOnDragListener(new MyDragEventListener());
+
+        ImageView right = (ImageView)findViewById(R.id.right);
+        right.setOnDragListener(new MyDragEventListener());
+
+        ImageView bottomLeft = (ImageView)findViewById(R.id.bottom_left);
+        bottomLeft.setOnDragListener(new MyDragEventListener());
+
+        ImageView bottomCenter = (ImageView)findViewById(R.id.bottom_center);
+        bottomCenter.setOnDragListener(new MyDragEventListener());
+
+        ImageView bottomRight = (ImageView)findViewById(R.id.bottom_right);
+        bottomRight.setOnDragListener(new MyDragEventListener());
     }
 
 

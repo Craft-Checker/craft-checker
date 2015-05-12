@@ -18,7 +18,6 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
     private Context context;
     private ArrayList<Item> items;
-    private static final String IMAGEVIEW_TAG = "icon bitmap";
 
     public ItemAdapter(Context context, ArrayList<Item> items) {
         super(context, R.layout.crafting_item, items);
@@ -29,6 +28,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.crafting_item, parent, false);
         final ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
+        final String IMAGEVIEW_TAG = "icon bitmap";
         imageView.setImageResource(items.get(position).getImageRes());
         imageView.setTag(IMAGEVIEW_TAG);
         imageView.setOnLongClickListener(new View.OnLongClickListener() {
