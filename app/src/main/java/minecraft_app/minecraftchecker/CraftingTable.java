@@ -41,48 +41,63 @@ public class CraftingTable extends Activity {
         toolsCombatItems = new ArrayList<Item>();
         materialsMiscItems = new ArrayList<Item>();
     // Building/Decor
-        buildingDecorItems.add(new Item(R.drawable.cobblestone));
-        buildingDecorItems.add(new Item(R.drawable.stone));
-        buildingDecorItems.add(new Item(R.drawable.dirt));
-        buildingDecorItems.add(new Item(R.drawable.sand));
-        buildingDecorItems.add(new Item(R.drawable.wood));
-        buildingDecorItems.add(new Item(R.drawable.glass));
+        buildingDecorItems.add(new Item(R.drawable.cobblestone, "cobblestone"));
+        buildingDecorItems.add(new Item(R.drawable.stone, "stone"));
+        buildingDecorItems.add(new Item(R.drawable.dirt, "dirt"));
+        buildingDecorItems.add(new Item(R.drawable.sand, "sand"));
+        buildingDecorItems.add(new Item(R.drawable.wood, "wood"));
+        buildingDecorItems.add(new Item(R.drawable.glass, "glass"));
 
     // Redstone/Transportation
-        redstoneTransportItems.add(new Item(R.drawable.redstone_dust));
-        redstoneTransportItems.add(new Item(R.drawable.redstone_torch));
-        redstoneTransportItems.add(new Item(R.drawable.redstone_repeater));
-        redstoneTransportItems.add(new Item(R.drawable.rails));
-        redstoneTransportItems.add(new Item(R.drawable.powered_rail));
-        redstoneTransportItems.add(new Item(R.drawable.boat));
+        redstoneTransportItems.add(new Item(R.drawable.redstone_dust, "redstone_dust"));
+        redstoneTransportItems.add(new Item(R.drawable.redstone_torch, "redstone_torch"));
+        redstoneTransportItems.add(new Item(R.drawable.redstone_repeater, "redstone_repeater"));
+        redstoneTransportItems.add(new Item(R.drawable.rails, "rails"));
+        redstoneTransportItems.add(new Item(R.drawable.powered_rail, "powered_rail"));
+        redstoneTransportItems.add(new Item(R.drawable.boat, "boat"));
 
     // Food/Brewing
-        Item i1 = new Item(R.drawable.bread);
-        ItemMap.idResMap.put("", i1);
-        foodBrewingItems.add(i1);
-        foodBrewingItems.add(new Item(R.drawable.steak));
-        foodBrewingItems.add(new Item(R.drawable.cookie));
-        foodBrewingItems.add(new Item(R.drawable.carrot));
-        foodBrewingItems.add(new Item(R.drawable.potato));
-        foodBrewingItems.add(new Item(R.drawable.glass_bottle));
+
+        // Note to self: You cannot "craft" many food items, consider omitting many of these
+        Item item_bread = new Item(R.drawable.bread, "bread");
+        Item item_steak = new Item(R.drawable.steak, "steak");
+
+        ItemMap.idResMap.put(R.drawable.bread, item_bread);
+        ItemMap.idResMap.put(R.drawable.steak, item_steak);
+
+        foodBrewingItems.add(item_bread);
+        foodBrewingItems.add(item_steak);
+
+        // To-do, continue editing here following the above 6 lines as a guide
+        foodBrewingItems.add(new Item(R.drawable.cookie, "cookie"));
+        foodBrewingItems.add(new Item(R.drawable.carrot, "carrot"));
+        foodBrewingItems.add(new Item(R.drawable.potato, "potato"));
+        foodBrewingItems.add(new Item(R.drawable.glass_bottle, "glass_bottle"));
 
     // Tools/Combat
-        toolsCombatItems.add(new Item(R.drawable.iron_helmet));
-        toolsCombatItems.add(new Item(R.drawable.iron_chestplate));
-        toolsCombatItems.add(new Item(R.drawable.iron_leggings));
-        toolsCombatItems.add(new Item(R.drawable.iron_boots));
-        toolsCombatItems.add(new Item(R.drawable.diamond_helmet));
-        toolsCombatItems.add(new Item(R.drawable.diamond_chestplate));
-        toolsCombatItems.add(new Item(R.drawable.diamond_leggings));
-        toolsCombatItems.add(new Item(R.drawable.diamond_boots));
+
+        Item item_iron_helmet = new Item(R.drawable.iron_helmet, "iron_helmet");
+
+        ItemMap.idResMap.put(R.drawable.iron_helmet, item_iron_helmet);
+
+
+        toolsCombatItems.add(item_iron_helmet);
+
+        toolsCombatItems.add(new Item(R.drawable.iron_chestplate, "iron_chestplate"));
+        toolsCombatItems.add(new Item(R.drawable.iron_leggings, "iron_leggings"));
+        toolsCombatItems.add(new Item(R.drawable.iron_boots, "iron_boots"));
+        toolsCombatItems.add(new Item(R.drawable.diamond_helmet, "diamond_helmet"));
+        toolsCombatItems.add(new Item(R.drawable.diamond_chestplate, "diamond_chestplate"));
+        toolsCombatItems.add(new Item(R.drawable.diamond_leggings, "diamond_leggings"));
+        toolsCombatItems.add(new Item(R.drawable.diamond_boots, "diamond_boots"));
 
     // Materials/Misc
-        materialsMiscItems.add(new Item(R.drawable.coal));
-        materialsMiscItems.add(new Item(R.drawable.stick));
-        materialsMiscItems.add(new Item(R.drawable.leather));
-        materialsMiscItems.add(new Item(R.drawable.iron));
-        materialsMiscItems.add(new Item(R.drawable.gold));
-        materialsMiscItems.add(new Item(R.drawable.diamond));
+        materialsMiscItems.add(new Item(R.drawable.coal, "coal"));
+        materialsMiscItems.add(new Item(R.drawable.stick, "stick"));
+        materialsMiscItems.add(new Item(R.drawable.leather, "leather"));
+        materialsMiscItems.add(new Item(R.drawable.iron, "iron"));
+        materialsMiscItems.add(new Item(R.drawable.gold, "gold"));
+        materialsMiscItems.add(new Item(R.drawable.diamond, "diamond"));
 
         buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);
         redstoneTransportAdapter = new ItemAdapter(this, redstoneTransportItems);

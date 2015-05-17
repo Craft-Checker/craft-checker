@@ -5,12 +5,17 @@ package minecraft_app.minecraftchecker;
  */
 public class Item {
     private int imageRes;
+    private String name;
 
-    public Item(int imageRes) {
+    public Item(int imageRes, String name) {
         this.imageRes = imageRes;
+        this.name = name;
     }
 
     public int getImageRes() {
         return imageRes;
     }
+    public String getName() { return name; }
+    public void setImageRes(int imageRes) {this.imageRes = imageRes; }
+    public void setName(String name) {this.name = name; }
 }

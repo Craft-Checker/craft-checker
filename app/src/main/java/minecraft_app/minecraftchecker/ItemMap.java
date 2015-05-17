@@ -11,6 +11,6 @@ import la_hacks.minecraftchecker.R;
  */
 public class ItemMap {
 
-    public static Map<String, Item> idResMap = new HashMap<String, Item>();
+    public static Map<Integer, Item> idResMap = new HashMap<Integer, Item>();
 
 }
