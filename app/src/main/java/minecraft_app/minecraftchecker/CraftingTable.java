@@ -57,7 +57,9 @@ public class CraftingTable extends Activity {
         redstoneTransportItems.add(new Item(R.drawable.boat));
 
     // Food/Brewing
-        foodBrewingItems.add(new Item(R.drawable.bread));
+        Item i1 = new Item(R.drawable.bread);
+        ItemMap.idResMap.put("", i1);
+        foodBrewingItems.add(i1);
         foodBrewingItems.add(new Item(R.drawable.steak));
         foodBrewingItems.add(new Item(R.drawable.cookie));
         foodBrewingItems.add(new Item(R.drawable.carrot));
@@ -129,32 +131,53 @@ public class CraftingTable extends Activity {
         });
 
         // Crafting table drop listeners
-        ImageView topLeft = (ImageView)findViewById(R.id.top_left);
+        final ImageView topLeft = (ImageView)findViewById(R.id.top_left);
         topLeft.setOnDragListener(new MyDragEventListener());
 
-        ImageView topCenter = (ImageView)findViewById(R.id.top_center);
+        final ImageView topCenter = (ImageView)findViewById(R.id.top_center);
         topCenter.setOnDragListener(new MyDragEventListener());
 
-        ImageView topRight = (ImageView)findViewById(R.id.top_right);
+        final ImageView topRight = (ImageView)findViewById(R.id.top_right);
         topRight.setOnDragListener(new MyDragEventListener());
 
-        ImageView left = (ImageView)findViewById(R.id.left);
+        final ImageView left = (ImageView)findViewById(R.id.left);
         left.setOnDragListener(new MyDragEventListener());
 
-        ImageView center = (ImageView)findViewById(R.id.center);
+        final ImageView center = (ImageView)findViewById(R.id.center);
         center.setOnDragListener(new MyDragEventListener());
 
-        ImageView right = (ImageView)findViewById(R.id.right);
+        final ImageView right = (ImageView)findViewById(R.id.right);
         right.setOnDragListener(new MyDragEventListener());
 
-        ImageView bottomLeft = (ImageView)findViewById(R.id.bottom_left);
+        final ImageView bottomLeft = (ImageView)findViewById(R.id.bottom_left);
         bottomLeft.setOnDragListener(new MyDragEventListener());
 
-        ImageView bottomCenter = (ImageView)findViewById(R.id.bottom_center);
+        final ImageView bottomCenter = (ImageView)findViewById(R.id.bottom_center);
         bottomCenter.setOnDragListener(new MyDragEventListener());
 
-        ImageView bottomRight = (ImageView)findViewById(R.id.bottom_right);
+        final ImageView bottomRight = (ImageView)findViewById(R.id.bottom_right);
         bottomRight.setOnDragListener(new MyDragEventListener());
+
+        final ImageView result = (ImageView)findViewById(R.id.result);
+        result.setOnDragListener(new MyDragEventListener());
+
+        // Clear Button
+        // Reset entire table and result box
+        Button clear = (Button)findViewById(R.id.clear);
+        clear.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                topLeft.setImageResource(android.R.color.transparent);
+                topCenter.setImageResource(android.R.color.transparent);
+                topRight.setImageResource(android.R.color.transparent);
+                left.setImageResource(android.R.color.transparent);
+                center.setImageResource(android.R.color.transparent);
+                right.setImageResource(android.R.color.transparent);
+                bottomLeft.setImageResource(android.R.color.transparent);
+                bottomCenter.setImageResource(android.R.color.transparent);
+                bottomRight.setImageResource(android.R.color.transparent);
+                result.setImageResource(android.R.color.transparent);
+            }
+        });
     }
 
 

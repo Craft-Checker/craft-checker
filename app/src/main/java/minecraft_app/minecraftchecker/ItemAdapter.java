@@ -35,8 +35,8 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             @Override
             public boolean onLongClick(View v) {
                 String[] mimeType = {ClipDescription.MIMETYPE_TEXT_PLAIN};
-                ClipData.Item item = new ClipData.Item((CharSequence)IMAGEVIEW_TAG);
-                ClipData dragData = new ClipData((CharSequence)v.getTag(), mimeType, item);
+                ClipData.Item item = new ClipData.Item(Integer.toString(items.get(position).getImageRes()));
+                ClipData dragData = new ClipData("item_res", mimeType, item);
                 View.DragShadowBuilder myShadow = new MyDragShadowBuilder(imageView);
                 return v.startDrag(dragData, myShadow, null, 0);
             }

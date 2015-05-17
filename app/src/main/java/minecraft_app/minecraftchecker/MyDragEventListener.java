@@ -39,6 +39,7 @@ public class MyDragEventListener implements View.OnDragListener {
 
                 v.setBackgroundColor(Color.GREEN);
 
+
                 // Invalidate the view to force a redraw in the new tint
                 v.invalidate();
 
@@ -63,8 +64,11 @@ public class MyDragEventListener implements View.OnDragListener {
 
                 // Gets the item containing the dragged data
                 ClipData.Item item = event.getClipData().getItemAt(0);
-                View view = (View)event.getLocalState();
-                ImageView temp = (ImageView)view;
+
+                Log.i("TEST", item.getText() + " test");
+
+//                View view = (View)event.getLocalState();
+//                ImageView temp = (ImageView)view;
 
                 // Gets the text data from the item.
                 //Drawable dragData = item.getDrawable();
@@ -73,7 +77,10 @@ public class MyDragEventListener implements View.OnDragListener {
                // Toast.makeText(this, "Dragged data is " + dragData, Toast.LENGTH_LONG);
 
                 // Turns off any color tints
+                //ItemMap.idResMap.get("stone");
+
                 v.setBackgroundColor(Color.WHITE);
+                ((ImageView)v).setImageResource(Integer.parseInt(item.getText().toString()));
                 //imageView.clearColorFilter();
 
                 // Invalidates the view to force a redraw
