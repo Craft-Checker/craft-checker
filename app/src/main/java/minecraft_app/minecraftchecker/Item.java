@@ -18,4 +18,8 @@ public class Item {
     public String getName() { return name; }
     public void setImageRes(int imageRes) {this.imageRes = imageRes; }
     public void setName(String name) {this.name = name; }
+    public Item getCopy() {
+        Item copy = new Item(this.imageRes, this.name);
+        return copy;
+    }
 }

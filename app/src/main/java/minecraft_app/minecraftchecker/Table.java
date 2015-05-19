@@ -1,5 +1,7 @@
 package minecraft_app.minecraftchecker;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import la_hacks.minecraftchecker.R;
 
@@ -31,32 +33,23 @@ public class Table {
     private int index;
 
     public Table() {
-        // Initialize all items as default "box" item. "Box" is a placeholder so items are never null.
-        topLeft = new Item(R.drawable.box, "box");
-        topCenter = new Item(R.drawable.box, "box");
-        topRight = new Item(R.drawable.box, "box");
-        left = new Item(R.drawable.box, "box");
-        center = new Item(R.drawable.box, "box");
-        right = new Item(R.drawable.box, "box");
-        bottomLeft = new Item(R.drawable.box, "box");
-        bottomCenter = new Item(R.drawable.box, "box");
-        bottomRight = new Item(R.drawable.box, "box");
-        result = new Item(R.drawable.box, "box");
+        // Initialize all items as default "blank" item. "blank" is a placeholder so items are never null.
+        topLeft = new Item(0, "blank");
+        topCenter = new Item(0, "blank");
+        topRight = new Item(0, "blank");
+        left = new Item(0, "blank");
+        center = new Item(0, "blank");
+        right = new Item(0, "blank");
+        bottomLeft = new Item(0, "blank");
+        bottomCenter = new Item(0, "blank");
+        bottomRight = new Item(0, "blank");
+        result = new Item(0, "blank");
         index = 0;
 
         // Populate receipts here. When app is complete, this part will be HUGE. Consider alternate way to populate receipts in future.
         // Note: Using "box" for absence of an item on a particular table slot
-        receipts.add(new Item[]{
-                new Item(R.drawable.iron, "iron"),
-                new Item(R.drawable.iron, "iron"),
-                new Item(R.drawable.iron, "iron"),
-                new Item(R.drawable.iron, "iron"),
-                new Item(R.drawable.box, "box"),
-                new Item(R.drawable.iron, "iron"),
-                new Item(R.drawable.box, "box"),
-                new Item(R.drawable.box, "box"),
-                new Item(R.drawable.box, "box"),
-                new Item(R.drawable.iron_helmet, "iron_helmet")});
+        ReceiptBuilder builder = new ReceiptBuilder();
+        receipts = builder.getReceipts();
     }
 
     // Manual setters, getters (might not need getters, keep for now though for debugging)
@@ -91,37 +84,80 @@ public class Table {
         result = item;
     }
     public void clearTable() {
-        // Set all items to default "box" items
-        topLeft.setImageRes(R.drawable.box);
-        topLeft.setName("box");
-        topCenter.setImageRes(R.drawable.box);
-        topCenter.setName("box");
-        topRight.setImageRes(R.drawable.box);
-        topRight.setName("box");
-        left.setImageRes(R.drawable.box);
-        left.setName("box");
-        center.setImageRes(R.drawable.box);
-        center.setName("box");
-        right.setImageRes(R.drawable.box);
-        right.setName("box");
-        bottomLeft.setImageRes(R.drawable.box);
-        bottomLeft.setName("box");
-        bottomCenter.setImageRes(R.drawable.box);
-        bottomCenter.setName("box");
-        bottomRight.setImageRes(R.drawable.box);
-        bottomRight.setName("box");
-        result.setImageRes(R.drawable.box);
-        result.setName("box");
+        // Set all items to default "blank" items
+        topLeft = new Item(0, "blank");
+        topCenter = new Item(0, "blank");
+        topRight = new Item(0, "blank");
+        left = new Item(0, "blank");
+        center = new Item(0, "blank");
+        right = new Item(0, "blank");
+        bottomLeft = new Item(0, "blank");
+        bottomCenter = new Item(0, "blank");
+        bottomRight = new Item(0, "blank");
+        result = new Item(0, "blank");
+        index = 0;
     }
+
+    /*
+    BIG HUGE NOTE HERE: These boolean methods actually modify the index of a "found" receipt or item.
+    This is BAD. Should modify in separate methods so these simply check if it exists without
+    trying to calculate the index of the found item or receipt. The key here is controlling
+    which item or receipt you are looking for so you can control the behavior of how the table
+    displays. Fix this. Works generally "good enough" for now, but it's horrible coding practice.
+     */
+
     public boolean isTableReceipt() {
-        for(int i = 0; i < receipts.size(); i++) {
+        boolean found = false;
+        Item[] receipt = null;
+        for(int i = 0; i < receipts.size() && !found; i++) {
             // To-do: somehow need to check if table is a receipt
             //        by stepping through the receipts ArrayList
+            receipt = receipts.get(i);
+            if(receipt.length == 10) {
+                Log.i("TEST", "Within table, receipt was of length 10");
+                if (topLeft.getName().equalsIgnoreCase(receipt[0].getName())
+                        && topCenter.getName().equalsIgnoreCase(receipt[1].getName())
+                        && topRight.getName().equalsIgnoreCase(receipt[2].getName())
+                        && left.getName().equalsIgnoreCase(receipt[3].getName())
+                        && center.getName().equalsIgnoreCase(receipt[4].getName())
+                        && right.getName().equalsIgnoreCase(receipt[5].getName())
+                        && bottomLeft.getName().equalsIgnoreCase(receipt[6].getName())
+                        && bottomCenter.getName().equalsIgnoreCase(receipt[7].getName())
+                        && bottomRight.getName().equalsIgnoreCase(receipt[8].getName())) {
+                    found = true;
+                    index = i;
+                }
+            }
         }
-        return false;
+        return found;
     }
     public boolean resultHasReceipt() {
-        return false;
+        boolean found = false;
+        Item[] receipt = null;
+        for(int i = 0; i < receipts.size() && !found; i++) {
+            receipt = receipts.get(i);
+            if(receipt.length == 10) {
+                if (result.getName().equalsIgnoreCase(receipt[9].getName())) {
+                    found = true;
+                    index = i;
+                }
+            }
+        }
+        return found;
+    }
+    // If either a receipt or a result exists, getting that Item[] will provide both the
+    // receipt and result data
+    // THIS METHOD IS A BAD IDEA: fix this by splitting into two methods.
+    // First method should get the receipt for the item
+    // Second method should get the item for a receipt
+    public Item[] getMatchingReceipt() {
+        boolean receiptExists = resultHasReceipt();
+        boolean resultExists = isTableReceipt();
+        if(receiptExists || resultExists)
+            return receipts.get(index);
+        else
+            return null;
+        // Be careful here. Will return null if no receipt exists. Be sure to check if it exists before trying to get it
     }
 }
 
