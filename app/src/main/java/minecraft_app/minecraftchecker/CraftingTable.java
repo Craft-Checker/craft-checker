@@ -118,7 +118,6 @@ public class CraftingTable extends Activity {
         Item item_golden_carrot = new Item(R.drawable.golden_carrot, "golden_carrot");
         Item item_baked_potato = new Item(R.drawable.baked_potato, "baked_potato");
         Item item_cooked_rabbit = new Item(R.drawable.cooked_rabbit, "cooked_rabbit");
-        Item item_rabbit_stew = new Item(R.drawable.rabbit_stew, "rabbit_stew");
         Item item_blaze_rod = new Item(R.drawable.blaze_rod, "blaze_rod");
         Item item_blaze_powder = new Item(R.drawable.blaze_powder, "blaze_powder");
         Item item_spider_eye = new Item(R.drawable.spider_eye, "spider_eye");
@@ -126,6 +125,8 @@ public class CraftingTable extends Activity {
         Item item_slime_ball = new Item(R.drawable.slime_ball, "slime_ball");
         Item item_magma_creme = new Item(R.drawable.magma_cream, "magma_creme");
         Item item_bowl = new Item(R.drawable.bowl, "bowl");
+        Item item_mushroom_stew = new Item(R.drawable.mushroom_stew, "mushroom_stew");
+        Item item_rabbit_stew = new Item(R.drawable.rabbit_stew, "rabbit_stew");
         Item item_glass_bottle = new Item(R.drawable.glass_bottle, "glass_bottle");
         Item item_brewing_stand = new Item(R.drawable.brewing_stand, "brewing_stand");
         Item item_cauldron = new Item(R.drawable.cauldron, "cauldron");
@@ -155,7 +156,6 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.golden_carrot, item_golden_carrot);
         ItemMap.idResMap.put(R.drawable.baked_potato, item_baked_potato);
         ItemMap.idResMap.put(R.drawable.cooked_rabbit, item_cooked_rabbit);
-        ItemMap.idResMap.put(R.drawable.rabbit_stew, item_rabbit_stew);
         ItemMap.idResMap.put(R.drawable.blaze_rod, item_blaze_rod);
         ItemMap.idResMap.put(R.drawable.blaze_powder, item_blaze_powder);
         ItemMap.idResMap.put(R.drawable.spider_eye, item_spider_eye);
@@ -163,6 +163,8 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.slime_ball, item_slime_ball);
         ItemMap.idResMap.put(R.drawable.magma_cream, item_magma_creme);
         ItemMap.idResMap.put(R.drawable.bowl, item_bowl);
+        ItemMap.idResMap.put(R.drawable.mushroom_stew, item_mushroom_stew);
+        ItemMap.idResMap.put(R.drawable.rabbit_stew, item_rabbit_stew);
         ItemMap.idResMap.put(R.drawable.glass_bottle, item_glass_bottle);
         ItemMap.idResMap.put(R.drawable.brewing_stand, item_brewing_stand);
         ItemMap.idResMap.put(R.drawable.cauldron, item_cauldron);
@@ -192,7 +194,6 @@ public class CraftingTable extends Activity {
         foodBrewingItems.add(item_golden_carrot);
         foodBrewingItems.add(item_baked_potato);
         foodBrewingItems.add(item_cooked_rabbit);
-        foodBrewingItems.add(item_rabbit_stew);
         foodBrewingItems.add(item_blaze_rod);
         foodBrewingItems.add(item_blaze_powder);
         foodBrewingItems.add(item_spider_eye);
@@ -200,6 +201,8 @@ public class CraftingTable extends Activity {
         foodBrewingItems.add(item_slime_ball);
         foodBrewingItems.add(item_magma_creme);
         foodBrewingItems.add(item_bowl);
+        foodBrewingItems.add(item_mushroom_stew);
+        foodBrewingItems.add(item_rabbit_stew);
         foodBrewingItems.add(item_glass_bottle);
         foodBrewingItems.add(item_brewing_stand);
         foodBrewingItems.add(item_cauldron);
