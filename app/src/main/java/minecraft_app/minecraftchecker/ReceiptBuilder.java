@@ -17,6 +17,216 @@ public class ReceiptBuilder {
         // When adding an item, the "default" receipt for an item is the first receipt added for that item
         // The default receipt is used when the receipt for an item is to be generated on the table
 
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  BUILDING / DECOR  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+        receipts.add(new Item[]{                                // Torch (6 different positions)
+                new Item(0, "blank"),                           // default to bottom center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.coal, "coal"),                           // Top left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),                                                          // Top middle
+                new Item(R.drawable.coal, "coal"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),                                                          // Top right
+                new Item(R.drawable.coal, "coal"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),                                                          // Bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),                                                          // Bottom right
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.torch, "torch")});
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  REDSTONE / TRANSPORT  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+        receipts.add(new Item[]{                                // Redstone Torch (6 different positions)
+                new Item(0, "blank"),                           // default to bottom center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_torch, "redstone_torch")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.redstone_dust, "redstone_dust"),                           // Top left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_torch, "redstone_torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),                                                          // Top middle
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_torch, "redstone_torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),                                                          // Top right
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_torch, "redstone_torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),                                                          // Bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_torch, "redstone_torch")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),                                                          // Bottom right
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.redstone_torch, "redstone_torch")});
+
+        receipts.add(new Item[]{                                // Boat - default to bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.boat, "boat")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.boat, "boat")});
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  FOOD / BREWING  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+        receipts.add(new Item[]{                                         // Bread - default to center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.bread, "bread")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.bread, "bread")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.bread, "bread")});
+
+        receipts.add(new Item[]{                                // Glass Bottle
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glass_bottle, "glass_bottle")});
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  TOOLS / COMBAT  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
         receipts.add(new Item[]{                                // Iron Helmet
                 new Item(R.drawable.iron, "iron"),
                 new Item(R.drawable.iron, "iron"),
@@ -242,174 +452,8 @@ public class ReceiptBuilder {
                 new Item(0, "blank"),
                 new Item(R.drawable.stick, "stick"),
                 new Item(R.drawable.iron_sword, "iron_sword")});
-        receipts.add(new Item[]{                                // Boat - default to bottom
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.boat, "boat")});
-        receipts.add(new Item[]{
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(R.drawable.wooden_plank, "wooden_plank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.boat, "boat")});
-
-        receipts.add(new Item[]{                                // Glass Bottle
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.glass, "glass"),
-                new Item(0, "blank"),
-                new Item(R.drawable.glass, "glass"),
-                new Item(0, "blank"),
-                new Item(R.drawable.glass, "glass"),
-                new Item(0, "blank"),
-                new Item(R.drawable.glass_bottle, "glass_bottle")});
-
-        receipts.add(new Item[]{                                // Redstone Torch (6 different positions)
-                new Item(0, "blank"),                           // default to bottom center
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_dust, "redstone_dust"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_torch, "redstone_torch")});
-        receipts.add(new Item[]{
-                new Item(R.drawable.redstone_dust, "redstone_dust"),                           // Top left
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_torch, "redstone_torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),                                                          // Top middle
-                new Item(R.drawable.redstone_dust, "redstone_dust"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_torch, "redstone_torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),
-                new Item(0, "blank"),                                                          // Top right
-                new Item(R.drawable.redstone_dust, "redstone_dust"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_torch, "redstone_torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),                                                          // Bottom left
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_dust, "redstone_dust"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_torch, "redstone_torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),                                                          // Bottom right
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.redstone_dust, "redstone_dust"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(R.drawable.redstone_torch, "redstone_torch")});
-
-        receipts.add(new Item[]{                                // Torch (6 different positions)
-                new Item(0, "blank"),                           // default to bottom center
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.coal, "coal"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(R.drawable.torch, "torch")});
-        receipts.add(new Item[]{
-                new Item(R.drawable.coal, "coal"),                           // Top left
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.torch, "torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),                                                          // Top middle
-                new Item(R.drawable.coal, "coal"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.torch, "torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),
-                new Item(0, "blank"),                                                          // Top right
-                new Item(R.drawable.coal, "coal"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.torch, "torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),                                                          // Bottom left
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.coal, "coal"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.torch, "torch")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),                                                          // Bottom right
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.coal, "coal"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.stick, "stick"),
-                new Item(R.drawable.torch, "torch")});
+        
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MATERIALS / MISC  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
         receipts.add(new Item[]{                                    // Wooden Plank - Default to center
                 new Item(0, "blank"),
@@ -510,40 +554,6 @@ public class ReceiptBuilder {
                 new Item(0, "blank"),
                 new Item(R.drawable.wood, "wood"),
                 new Item(R.drawable.wooden_plank, "wooden_plank")});
-
-        receipts.add(new Item[]{                                         // Bread - default to center
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.bread, "bread")});
-        receipts.add(new Item[]{
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.bread, "bread")});
-        receipts.add(new Item[]{
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(0, "blank"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.wheat, "wheat"),
-                new Item(R.drawable.bread, "bread")});
 
     }
     public ArrayList<Item[]> getReceipts() {

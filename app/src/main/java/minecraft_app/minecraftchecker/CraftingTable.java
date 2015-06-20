@@ -43,29 +43,29 @@ public class CraftingTable extends Activity {
         materialsMiscItems = new ArrayList<Item>();
     // Building/Decor
 
+        Item item_torch = new Item(R.drawable.torch, "torch");
         Item item_cobblestone = new Item(R.drawable.cobblestone, "cobblestone");
         Item item_stone = new Item(R.drawable.stone, "stone");
         Item item_dirt = new Item(R.drawable.dirt, "dirt");
         Item item_sand = new Item(R.drawable.sand, "sand");
         Item item_wood = new Item(R.drawable.wood, "wood");
         Item item_glass = new Item(R.drawable.glass, "glass");
-        Item item_torch = new Item(R.drawable.torch, "torch");
 
+        ItemMap.idResMap.put(R.drawable.torch, item_torch);
         ItemMap.idResMap.put(R.drawable.cobblestone, item_cobblestone);
         ItemMap.idResMap.put(R.drawable.stone, item_stone);
         ItemMap.idResMap.put(R.drawable.dirt, item_dirt);
         ItemMap.idResMap.put(R.drawable.sand, item_sand);
         ItemMap.idResMap.put(R.drawable.wood, item_wood);
         ItemMap.idResMap.put(R.drawable.glass, item_glass);
-        ItemMap.idResMap.put(R.drawable.torch, item_torch);
 
+        buildingDecorItems.add(item_torch);
         buildingDecorItems.add(item_cobblestone);
         buildingDecorItems.add(item_stone);
         buildingDecorItems.add(item_dirt);
         buildingDecorItems.add(item_sand);
         buildingDecorItems.add(item_wood);
         buildingDecorItems.add(item_glass);
-        buildingDecorItems.add(item_torch);
 
     // Redstone/Transportation
 
@@ -93,27 +93,116 @@ public class CraftingTable extends Activity {
 
     // Food/Brewing
 
-        // Note to self: You cannot "craft" many food items, consider omitting many of these
-        Item item_bread = new Item(R.drawable.bread, "bread");
+        Item item_sugar = new Item(R.drawable.sugar, "sugar");
+        Item item_sugar_cane = new Item(R.drawable.sugar_cane, "sugar_cane");
+        Item item_milk = new Item(R.drawable.milk, "milk");
+        Item item_egg = new Item(R.drawable.egg, "egg");
+        Item item_cake = new Item(R.drawable.cake, "cake");
+        Item item_cocoa_beans = new Item(R.drawable.cocoa_beans, "cocoa_beans");
+        Item item_red_mushroom = new Item(R.drawable.red_mushroom, "red_mushroom");
+        Item item_brown_mushroom = new Item(R.drawable.brown_mushroom, "brown_mushroom");
+        Item item_apple = new Item(R.drawable.apple, "apple");
+        Item item_golden_apple = new Item(R.drawable.golden_apple, "golden_apple");
+        Item item_enchanted_golden_apple = new Item(R.drawable.enchanted_golden_apple, "enchanted_golden_apple");
+        Item item_pumpkin =  new Item(R.drawable.pumpkin, "pumpkin");
+        Item item_pumpkin_seeds = new Item(R.drawable.pumpkin_seeds, "pumpkin_seeds");
+        Item item_pumpkin_pie = new Item(R.drawable.pumpkin_pie, "pumpkin_pie");
+        Item item_melon = new Item(R.drawable.melon, "melon");
+        Item item_melon_seeds = new Item(R.drawable.melon_seeds, "melon_seeds");
+        Item item_melon_slice = new Item(R.drawable.melon_slice, "melon_slice");
+        Item item_glistering_melon = new Item(R.drawable.glistering_melon, "glistering_melon");
         Item item_wheat = new Item(R.drawable.wheat, "wheat");
+        Item item_bread = new Item(R.drawable.bread, "bread");
         Item item_cookie = new Item(R.drawable.cookie, "cookie");
         Item item_carrot = new Item(R.drawable.carrot, "carrot");
-        Item item_potato = new Item(R.drawable.potato, "potato");
+        Item item_golden_carrot = new Item(R.drawable.golden_carrot, "golden_carrot");
+        Item item_baked_potato = new Item(R.drawable.baked_potato, "baked_potato");
+        Item item_cooked_rabbit = new Item(R.drawable.cooked_rabbit, "cooked_rabbit");
+        Item item_rabbit_stew = new Item(R.drawable.rabbit_stew, "rabbit_stew");
+        Item item_blaze_rod = new Item(R.drawable.blaze_rod, "blaze_rod");
+        Item item_blaze_powder = new Item(R.drawable.blaze_powder, "blaze_powder");
+        Item item_spider_eye = new Item(R.drawable.spider_eye, "spider_eye");
+        Item item_fermented_spider_eye = new Item(R.drawable.fermented_spider_eye, "fermented_spider_eye");
+        Item item_slime_ball = new Item(R.drawable.slime_ball, "slime_ball");
+        Item item_magma_creme = new Item(R.drawable.magma_cream, "magma_creme");
+        Item item_bowl = new Item(R.drawable.bowl, "bowl");
         Item item_glass_bottle = new Item(R.drawable.glass_bottle, "glass_bottle");
+        Item item_brewing_stand = new Item(R.drawable.brewing_stand, "brewing_stand");
+        Item item_cauldron = new Item(R.drawable.cauldron, "cauldron");
 
-        ItemMap.idResMap.put(R.drawable.bread, item_bread);
+        ItemMap.idResMap.put(R.drawable.sugar, item_sugar);
+        ItemMap.idResMap.put(R.drawable.sugar_cane, item_sugar_cane);
+        ItemMap.idResMap.put(R.drawable.milk, item_milk);
+        ItemMap.idResMap.put(R.drawable.egg, item_egg);
+        ItemMap.idResMap.put(R.drawable.cake, item_cake);
+        ItemMap.idResMap.put(R.drawable.cocoa_beans, item_cocoa_beans);
+        ItemMap.idResMap.put(R.drawable.red_mushroom, item_red_mushroom);
+        ItemMap.idResMap.put(R.drawable.brown_mushroom, item_brown_mushroom);
+        ItemMap.idResMap.put(R.drawable.apple, item_apple);
+        ItemMap.idResMap.put(R.drawable.golden_apple, item_golden_apple);
+        ItemMap.idResMap.put(R.drawable.enchanted_golden_apple, item_enchanted_golden_apple);
+        ItemMap.idResMap.put(R.drawable.pumpkin, item_pumpkin);
+        ItemMap.idResMap.put(R.drawable.pumpkin_seeds, item_pumpkin_seeds);
+        ItemMap.idResMap.put(R.drawable.pumpkin_pie, item_pumpkin_pie);
+        ItemMap.idResMap.put(R.drawable.melon, item_melon);
+        ItemMap.idResMap.put(R.drawable.melon_seeds, item_melon_seeds);
+        ItemMap.idResMap.put(R.drawable.melon_slice, item_melon_slice);
+        ItemMap.idResMap.put(R.drawable.glistering_melon, item_glistering_melon);
         ItemMap.idResMap.put(R.drawable.wheat, item_wheat);
+        ItemMap.idResMap.put(R.drawable.bread, item_bread);
         ItemMap.idResMap.put(R.drawable.cookie, item_cookie);
         ItemMap.idResMap.put(R.drawable.carrot, item_carrot);
-        ItemMap.idResMap.put(R.drawable.potato, item_potato);
+        ItemMap.idResMap.put(R.drawable.golden_carrot, item_golden_carrot);
+        ItemMap.idResMap.put(R.drawable.baked_potato, item_baked_potato);
+        ItemMap.idResMap.put(R.drawable.cooked_rabbit, item_cooked_rabbit);
+        ItemMap.idResMap.put(R.drawable.rabbit_stew, item_rabbit_stew);
+        ItemMap.idResMap.put(R.drawable.blaze_rod, item_blaze_rod);
+        ItemMap.idResMap.put(R.drawable.blaze_powder, item_blaze_powder);
+        ItemMap.idResMap.put(R.drawable.spider_eye, item_spider_eye);
+        ItemMap.idResMap.put(R.drawable.fermented_spider_eye, item_fermented_spider_eye);
+        ItemMap.idResMap.put(R.drawable.slime_ball, item_slime_ball);
+        ItemMap.idResMap.put(R.drawable.magma_cream, item_magma_creme);
+        ItemMap.idResMap.put(R.drawable.bowl, item_bowl);
         ItemMap.idResMap.put(R.drawable.glass_bottle, item_glass_bottle);
+        ItemMap.idResMap.put(R.drawable.brewing_stand, item_brewing_stand);
+        ItemMap.idResMap.put(R.drawable.cauldron, item_cauldron);
 
-        foodBrewingItems.add(item_bread);
+        foodBrewingItems.add(item_sugar);
+        foodBrewingItems.add(item_sugar_cane);
+        foodBrewingItems.add(item_milk);
+        foodBrewingItems.add(item_egg);
+        foodBrewingItems.add(item_cake);
+        foodBrewingItems.add(item_cocoa_beans);
+        foodBrewingItems.add(item_red_mushroom);
+        foodBrewingItems.add(item_brown_mushroom);
+        foodBrewingItems.add(item_apple);
+        foodBrewingItems.add(item_golden_apple);
+        foodBrewingItems.add(item_enchanted_golden_apple);
+        foodBrewingItems.add(item_pumpkin);
+        foodBrewingItems.add(item_pumpkin_seeds);
+        foodBrewingItems.add(item_pumpkin_pie);
+        foodBrewingItems.add(item_melon);
+        foodBrewingItems.add(item_melon_seeds);
+        foodBrewingItems.add(item_melon_slice);
+        foodBrewingItems.add(item_glistering_melon);
         foodBrewingItems.add(item_wheat);
+        foodBrewingItems.add(item_bread);
         foodBrewingItems.add(item_cookie);
         foodBrewingItems.add(item_carrot);
-        foodBrewingItems.add(item_potato);
+        foodBrewingItems.add(item_golden_carrot);
+        foodBrewingItems.add(item_baked_potato);
+        foodBrewingItems.add(item_cooked_rabbit);
+        foodBrewingItems.add(item_rabbit_stew);
+        foodBrewingItems.add(item_blaze_rod);
+        foodBrewingItems.add(item_blaze_powder);
+        foodBrewingItems.add(item_spider_eye);
+        foodBrewingItems.add(item_fermented_spider_eye);
+        foodBrewingItems.add(item_slime_ball);
+        foodBrewingItems.add(item_magma_creme);
+        foodBrewingItems.add(item_bowl);
         foodBrewingItems.add(item_glass_bottle);
+        foodBrewingItems.add(item_brewing_stand);
+        foodBrewingItems.add(item_cauldron);
 
     // Tools/Combat
 
@@ -180,6 +269,7 @@ public class CraftingTable extends Activity {
         Item item_iron = new Item(R.drawable.iron, "iron");
         Item item_gold = new Item(R.drawable.gold, "gold");
         Item item_diamond = new Item(R.drawable.diamond, "diamond");
+        Item item_gold_nugget = new Item(R.drawable.gold_nugget, "gold_nugget");
 
         ItemMap.idResMap.put(R.drawable.coal, item_coal);
         ItemMap.idResMap.put(R.drawable.stick, item_stick);
@@ -188,6 +278,7 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.iron, item_iron);
         ItemMap.idResMap.put(R.drawable.gold, item_gold);
         ItemMap.idResMap.put(R.drawable.diamond, item_diamond);
+        ItemMap.idResMap.put(R.drawable.gold_nugget, item_gold_nugget);
 
         materialsMiscItems.add(item_coal);
         materialsMiscItems.add(item_stick);
@@ -196,6 +287,7 @@ public class CraftingTable extends Activity {
         materialsMiscItems.add(item_iron);
         materialsMiscItems.add(item_gold);
         materialsMiscItems.add(item_diamond);
+        materialsMiscItems.add(item_gold_nugget);
 
         // Assign adapters
         buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);
