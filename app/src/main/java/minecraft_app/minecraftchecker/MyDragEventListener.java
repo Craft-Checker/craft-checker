@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import la_hacks.minecraftchecker.R;
 
@@ -71,7 +72,7 @@ public class MyDragEventListener implements View.OnDragListener {
                 // Gets the item containing the dragged data
                 ClipData.Item clipItem = event.getClipData().getItemAt(0);
 
-                Log.i("TEST", clipItem.getText() + " test");
+                //Log.i("TEST", clipItem.getText() + " test");
 
                 // References to all the table imageViews just in case they are needed to be changed
                 // due to receipt found or result having a receipt
@@ -85,6 +86,8 @@ public class MyDragEventListener implements View.OnDragListener {
                 ImageView bottomCenterView = (ImageView)activity.findViewById(R.id.bottom_center);
                 ImageView bottomRightView = (ImageView)activity.findViewById(R.id.bottom_right);
                 ImageView resultView = (ImageView)activity.findViewById(R.id.result);
+
+                TextView resultTextView = (TextView)activity.findViewById(R.id.resultText);
 
 //                View view = (View)event.getLocalState();
 //                ImageView temp = (ImageView)view;
@@ -230,7 +233,7 @@ public class MyDragEventListener implements View.OnDragListener {
                     resultView.setImageResource(0);
                     CraftingTable.table.setResult(new Item(0, "blank"));
                 }
-
+                resultTextView.setText(CraftingTable.table.getResultDesc());
                 // Returns true. DragEvent.getResult() will return true.
                 return true;
 

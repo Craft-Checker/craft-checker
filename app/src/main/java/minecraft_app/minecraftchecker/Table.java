@@ -83,6 +83,15 @@ public class Table {
     public void setResult(Item item) {
         result = item;
     }
+    public String getResultDesc() {
+        if(result.getName().equalsIgnoreCase("blank")) {
+            return "";
+        }
+        else {
+            String temp = result.getName();
+            return temp.replaceAll("_", " ");
+        }
+    }
     public void clearTable() {
         // Set all items to default "blank" items
         topLeft = new Item(0, "blank");
@@ -114,7 +123,7 @@ public class Table {
             //        by stepping through the receipts ArrayList
             receipt = receipts.get(i);
             if(receipt.length == 10) {
-                Log.i("TEST", "Within table, receipt was of length 10");
+                //Log.i("TEST", "Within table, receipt was of length 10");
                 if (topLeft.getName().equalsIgnoreCase(receipt[0].getName())
                         && topCenter.getName().equalsIgnoreCase(receipt[1].getName())
                         && topRight.getName().equalsIgnoreCase(receipt[2].getName())

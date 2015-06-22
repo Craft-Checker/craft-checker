@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -19,12 +20,12 @@ import la_hacks.minecraftchecker.R;
 public class CraftingTable extends Activity {
 
     private ArrayList<Item> buildingDecorItems;
-    private ArrayList<Item> redstoneTransportItems;
+    private ArrayList<Item> redstoneMechanismItems;
     private ArrayList<Item> foodBrewingItems;
     private ArrayList<Item> toolsCombatItems;
     private ArrayList<Item> materialsMiscItems;
     private ItemAdapter buildingDecorAdapter;
-    private ItemAdapter redstoneTransportAdapter;
+    private ItemAdapter redstoneMechanismAdapter;
     private ItemAdapter foodBrewingAdapter;
     private ItemAdapter toolsCombatAdapter;
     private ItemAdapter materialMiscAdapter;
@@ -37,13 +38,16 @@ public class CraftingTable extends Activity {
 
     // Populating lists that will appear when buttons are clicked
         buildingDecorItems = new ArrayList<Item>();
-        redstoneTransportItems = new ArrayList<Item>();
+        redstoneMechanismItems = new ArrayList<Item>();
         foodBrewingItems = new ArrayList<Item>();
         toolsCombatItems = new ArrayList<Item>();
         materialsMiscItems = new ArrayList<Item>();
     // Building/Decor
 
         Item item_torch = new Item(R.drawable.torch, "torch");
+        Item item_chest = new Item(R.drawable.chest, "chest");
+        Item item_furnace = new Item(R.drawable.furnace, "furnace");
+        Item item_glowstone = new Item(R.drawable.glowstone, "glowstone");
         Item item_cobblestone = new Item(R.drawable.cobblestone, "cobblestone");
         Item item_stone = new Item(R.drawable.stone, "stone");
         Item item_dirt = new Item(R.drawable.dirt, "dirt");
@@ -52,6 +56,9 @@ public class CraftingTable extends Activity {
         Item item_glass = new Item(R.drawable.glass, "glass");
 
         ItemMap.idResMap.put(R.drawable.torch, item_torch);
+        ItemMap.idResMap.put(R.drawable.chest, item_chest);
+        ItemMap.idResMap.put(R.drawable.furnace, item_furnace);
+        ItemMap.idResMap.put(R.drawable.glowstone, item_glowstone);
         ItemMap.idResMap.put(R.drawable.cobblestone, item_cobblestone);
         ItemMap.idResMap.put(R.drawable.stone, item_stone);
         ItemMap.idResMap.put(R.drawable.dirt, item_dirt);
@@ -60,6 +67,9 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.glass, item_glass);
 
         buildingDecorItems.add(item_torch);
+        buildingDecorItems.add(item_chest);
+        buildingDecorItems.add(item_furnace);
+        buildingDecorItems.add(item_glowstone);
         buildingDecorItems.add(item_cobblestone);
         buildingDecorItems.add(item_stone);
         buildingDecorItems.add(item_dirt);
@@ -67,29 +77,31 @@ public class CraftingTable extends Activity {
         buildingDecorItems.add(item_wood);
         buildingDecorItems.add(item_glass);
 
-    // Redstone/Transportation
+    // Redstone/Mechanism
 
         Item item_redstone_dust = new Item(R.drawable.redstone_dust, "redstone_dust");
         Item item_redstone_torch =  new Item(R.drawable.redstone_torch, "redstone_torch");
-        Item item_redstone_repeater = new Item(R.drawable.redstone_repeater, "redstone_repeater");
+        Item item_boat = new Item(R.drawable.boat, "boat");
+        Item item_powered_minecart = new Item(R.drawable.powered_minecart, "powered_minecart");
         Item item_rails = new Item(R.drawable.rails, "rails");
         Item item_powered_rail = new Item(R.drawable.powered_rail, "powered_rail");
-        Item item_boat = new Item(R.drawable.boat, "boat");
-
+        Item item_redstone_repeater = new Item(R.drawable.redstone_repeater, "redstone_repeater");
 
         ItemMap.idResMap.put(R.drawable.redstone_dust, item_redstone_dust);
         ItemMap.idResMap.put(R.drawable.redstone_torch, item_redstone_torch);
-        ItemMap.idResMap.put(R.drawable.redstone_repeater, item_redstone_repeater);
+        ItemMap.idResMap.put(R.drawable.boat, item_boat);
+        ItemMap.idResMap.put(R.drawable.powered_minecart, item_powered_minecart);
         ItemMap.idResMap.put(R.drawable.rails, item_rails);
         ItemMap.idResMap.put(R.drawable.powered_rail, item_powered_rail);
-        ItemMap.idResMap.put(R.drawable.boat, item_boat);
+        ItemMap.idResMap.put(R.drawable.redstone_repeater, item_redstone_repeater);
 
-        redstoneTransportItems.add(item_redstone_dust);
-        redstoneTransportItems.add(item_redstone_torch);
-        redstoneTransportItems.add(item_redstone_repeater);
-        redstoneTransportItems.add(item_rails);
-        redstoneTransportItems.add(item_powered_rail);
-        redstoneTransportItems.add(item_boat);
+        redstoneMechanismItems.add(item_redstone_dust);
+        redstoneMechanismItems.add(item_redstone_torch);
+        redstoneMechanismItems.add(item_boat);
+        redstoneMechanismItems.add(item_powered_minecart);
+        redstoneMechanismItems.add(item_rails);
+        redstoneMechanismItems.add(item_powered_rail);
+        redstoneMechanismItems.add(item_redstone_repeater);
 
     // Food/Brewing
 
@@ -372,11 +384,13 @@ public class CraftingTable extends Activity {
     // Materials/Misc
         Item item_flint = new Item(R.drawable.flint, "flint");
         Item item_coal = new Item(R.drawable.coal, "coal");
+        Item item_gunpowder = new Item(R.drawable.gunpowder, "gunpowder");
         Item item_string = new Item(R.drawable.string, "string");
         Item item_stick = new Item(R.drawable.stick, "stick");
         Item item_wooden_plank = new Item(R.drawable.wooden_plank, "wooden_plank");
         Item item_feather = new Item(R.drawable.feather, "feather");
         Item item_paper = new Item(R.drawable.paper, "paper");
+        Item item_nether_quartz = new Item(R.drawable.nether_quartz, "nether_quartz");
         Item item_leather = new Item(R.drawable.leather, "leather");
         Item item_iron = new Item(R.drawable.iron, "iron");
         Item item_gold = new Item(R.drawable.gold, "gold");
@@ -385,11 +399,13 @@ public class CraftingTable extends Activity {
 
         ItemMap.idResMap.put(R.drawable.flint, item_flint);
         ItemMap.idResMap.put(R.drawable.coal, item_coal);
+        ItemMap.idResMap.put(R.drawable.gunpowder, item_gunpowder);
         ItemMap.idResMap.put(R.drawable.string, item_string);
         ItemMap.idResMap.put(R.drawable.stick, item_stick);
         ItemMap.idResMap.put(R.drawable.wooden_plank, item_wooden_plank);
         ItemMap.idResMap.put(R.drawable.feather, item_feather);
         ItemMap.idResMap.put(R.drawable.paper, item_paper);
+        ItemMap.idResMap.put(R.drawable.nether_quartz, item_nether_quartz);
         ItemMap.idResMap.put(R.drawable.leather, item_leather);
         ItemMap.idResMap.put(R.drawable.iron, item_iron);
         ItemMap.idResMap.put(R.drawable.gold, item_gold);
@@ -398,11 +414,13 @@ public class CraftingTable extends Activity {
 
         materialsMiscItems.add(item_flint);
         materialsMiscItems.add(item_coal);
+        materialsMiscItems.add(item_gunpowder);
         materialsMiscItems.add(item_string);
         materialsMiscItems.add(item_stick);
         materialsMiscItems.add(item_wooden_plank);
         materialsMiscItems.add(item_feather);
         materialsMiscItems.add(item_paper);
+        materialsMiscItems.add(item_nether_quartz);
         materialsMiscItems.add(item_leather);
         materialsMiscItems.add(item_iron);
         materialsMiscItems.add(item_gold);
@@ -411,10 +429,14 @@ public class CraftingTable extends Activity {
 
         // Assign adapters
         buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);
-        redstoneTransportAdapter = new ItemAdapter(this, redstoneTransportItems);
+        redstoneMechanismAdapter = new ItemAdapter(this, redstoneMechanismItems);
         foodBrewingAdapter = new ItemAdapter(this, foodBrewingItems);
         toolsCombatAdapter = new ItemAdapter(this, toolsCombatItems);
         materialMiscAdapter =  new ItemAdapter(this, materialsMiscItems);
+
+        // Result Text Box
+
+        final TextView resultText = (TextView) findViewById(R.id.resultText);
 
         // Button listeners:
 
@@ -427,11 +449,11 @@ public class CraftingTable extends Activity {
                 list.setAdapter(buildingDecorAdapter);
             }
         });
-        Button redstoneTransportButton = (Button) findViewById(R.id.redstone_transport);
-        redstoneTransportButton.setOnClickListener(new View.OnClickListener() {
+        Button redstoneMechanismButton = (Button) findViewById(R.id.redstone_mechanism);
+        redstoneMechanismButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                list.setAdapter(redstoneTransportAdapter);
+                list.setAdapter(redstoneMechanismAdapter);
             }
         });
         Button foodBrewingButton = (Button) findViewById(R.id.food_brewing);
@@ -503,6 +525,7 @@ public class CraftingTable extends Activity {
                 bottomRight.setImageResource(android.R.color.transparent);
                 result.setImageResource(android.R.color.transparent);
                 table.clearTable();
+                resultText.setText("");
             }
         });
     }

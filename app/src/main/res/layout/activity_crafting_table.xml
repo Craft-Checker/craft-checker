@@ -173,14 +173,14 @@
         android:layout_below="@+id/gridLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/redstone_transport"
-        android:layout_alignEnd="@+id/redstone_transport" />
+        android:layout_alignRight="@+id/redstone_mechanism"
+        android:layout_alignEnd="@+id/redstone_mechanism" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Redstone/Transport"
-        android:id="@+id/redstone_transport"
+        android:text="Redstone/Mechanism"
+        android:id="@+id/redstone_mechanism"
         android:layout_below="@+id/building_decor"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -190,11 +190,11 @@
         android:layout_height="wrap_content"
         android:text="Food/Brewing"
         android:id="@+id/food_brewing"
-        android:layout_below="@+id/redstone_transport"
+        android:layout_below="@+id/redstone_mechanism"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/redstone_transport"
-        android:layout_alignEnd="@+id/redstone_transport" />
+        android:layout_alignRight="@+id/redstone_mechanism"
+        android:layout_alignEnd="@+id/redstone_mechanism" />
 
     <Button
         android:layout_width="wrap_content"
@@ -223,9 +223,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/building_decor"
-        android:layout_toRightOf="@+id/building_decor"
-        android:layout_toEndOf="@+id/building_decor"
-        android:layout_alignBottom="@+id/materials_misc">
+        android:layout_alignLeft="@+id/clear"
+        android:layout_alignStart="@+id/clear">
 
     </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textColor="@color/white"
+        android:id="@+id/resultText"
+        android:gravity="right"
+        android:layout_above="@+id/listViewForCategory"
+        android:layout_alignRight="@+id/listViewForCategory"
+        android:layout_alignEnd="@+id/listViewForCategory"
+        android:layout_toEndOf="@+id/building_decor"
+        android:layout_below="@+id/result"
+        android:layout_alignLeft="@+id/listViewForCategory"
+        android:layout_alignStart="@+id/listViewForCategory" />
 </RelativeLayout>
