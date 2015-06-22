@@ -308,7 +308,7 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.stone_axe, item_stone_axe);
         ItemMap.idResMap.put(R.drawable.iron_axe, item_iron_axe);
         ItemMap.idResMap.put(R.drawable.gold_axe, item_gold_axe);
-        ItemMap.idResMap.put(R.drawable.diamond_axe, item_gold_axe);
+        ItemMap.idResMap.put(R.drawable.diamond_axe, item_diamond_axe);
         ItemMap.idResMap.put(R.drawable.wooden_hoe, item_wooden_hoe);
         ItemMap.idResMap.put(R.drawable.stone_hoe, item_stone_hoe);
         ItemMap.idResMap.put(R.drawable.iron_hoe, item_iron_hoe);
