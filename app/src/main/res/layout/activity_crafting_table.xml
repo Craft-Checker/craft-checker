@@ -242,6 +242,6 @@
         android:layout_alignEnd="@+id/listViewForCategory"
         android:layout_toEndOf="@+id/building_decor"
         android:layout_below="@+id/result"
-        android:layout_alignLeft="@+id/listViewForCategory"
-        android:layout_alignStart="@+id/listViewForCategory" />
+        android:layout_toRightOf="@+id/building_decor"
+        android:layout_marginLeft="10dp"/>
 </RelativeLayout>

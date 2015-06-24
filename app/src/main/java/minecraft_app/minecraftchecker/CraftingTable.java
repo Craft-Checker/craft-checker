@@ -54,6 +54,7 @@ public class CraftingTable extends Activity {
         Item item_sand = new Item(R.drawable.sand, "sand");
         Item item_wood = new Item(R.drawable.wood, "wood");
         Item item_glass = new Item(R.drawable.glass, "glass");
+        Item item_wooden_slab =  new Item(R.drawable.wooden_slab, "wooden_slab");
 
         ItemMap.idResMap.put(R.drawable.torch, item_torch);
         ItemMap.idResMap.put(R.drawable.chest, item_chest);
@@ -65,6 +66,7 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.sand, item_sand);
         ItemMap.idResMap.put(R.drawable.wood, item_wood);
         ItemMap.idResMap.put(R.drawable.glass, item_glass);
+        ItemMap.idResMap.put(R.drawable.wooden_slab, item_wooden_slab);
 
         buildingDecorItems.add(item_torch);
         buildingDecorItems.add(item_chest);
@@ -76,32 +78,117 @@ public class CraftingTable extends Activity {
         buildingDecorItems.add(item_sand);
         buildingDecorItems.add(item_wood);
         buildingDecorItems.add(item_glass);
+        buildingDecorItems.add(item_wooden_slab);
 
     // Redstone/Mechanism
 
         Item item_redstone_dust = new Item(R.drawable.redstone_dust, "redstone_dust");
         Item item_redstone_torch =  new Item(R.drawable.redstone_torch, "redstone_torch");
         Item item_boat = new Item(R.drawable.boat, "boat");
+        Item item_minecart = new Item(R.drawable.minecart, "minecart");
         Item item_powered_minecart = new Item(R.drawable.powered_minecart, "powered_minecart");
+        Item item_storage_minecart = new Item(R.drawable.storage_minecart, "storage_minecart");
+        Item item_minecart_with_hopper = new Item(R.drawable.minecart_with_hopper, "minecart_with_hopper");
+        Item item_minecart_with_tnt = new Item(R.drawable.minecart_with_tnt, "minecart_with_tnt");
         Item item_rails = new Item(R.drawable.rails, "rails");
         Item item_powered_rail = new Item(R.drawable.powered_rail, "powered_rail");
+        Item item_detector_rail = new Item(R.drawable.detector_rail, "detector_rail");
+        Item item_activator_rail = new Item(R.drawable.activator_rail, "activator_rail");
+        Item item_tnt = new Item(R.drawable.tnt, "tnt");
+        Item item_jukebox = new Item(R.drawable.jukebox, "jukebox");
+        Item item_note_block = new Item(R.drawable.note_block, "note_block");
+        Item item_redstone_lamp = new Item(R.drawable.redstone_lamp, "redstone_lamp");
+        Item item_daylight_sensor = new Item(R.drawable.daylight_sensor, "daylight_sensor");
         Item item_redstone_repeater = new Item(R.drawable.redstone_repeater, "redstone_repeater");
+        Item item_redstone_comparator = new Item(R.drawable.redstone_comparator, "redstone_comparator");
+        Item item_trapdoor = new Item(R.drawable.trapdoor, "trapdoor");
+        Item item_iron_trapdoor = new Item(R.drawable.iron_trapdoor, "iron_trapdoor");
+        Item item_wood_pressure_plate = new Item(R.drawable.wood_pressure_plate, "wood_pressure_plate");
+        Item item_stone_pressure_plate = new Item(R.drawable.stone_pressure_plate, "stone_pressure_plate");
+        Item item_light_weighted_pressure_plate = new Item(R.drawable.light_weighted_pressure_plate, "light_weighted_pressure_plate");
+        Item item_heavy_weighted_pressure_plate = new Item(R.drawable.heavy_weighted_pressure_plate, "heavy_weighted_pressure_plate");
+        Item item_lever = new Item(R.drawable.lever, "lever");
+        Item item_wooden_button = new Item(R.drawable.wooden_button, "wooden_button");
+        Item item_stone_button = new Item(R.drawable.stone_button, "stone_button");
+        Item item_piston = new Item(R.drawable.piston, "piston");
+        Item item_sticky_piston = new Item(R.drawable.sticky_piston, "sticky_piston");
+        Item item_dispenser = new Item(R.drawable.dispenser, "dispenser");
+        Item item_dropper = new Item(R.drawable.dropper, "dropper");
+        Item item_hopper = new Item(R.drawable.hopper, "hopper");
+        Item item_tripwire_hook = new Item(R.drawable.tripwire_hook, "tripwire_hook");
+        Item item_trapped_chest = new Item(R.drawable.trapped_chest, "trapped_chest");
 
         ItemMap.idResMap.put(R.drawable.redstone_dust, item_redstone_dust);
         ItemMap.idResMap.put(R.drawable.redstone_torch, item_redstone_torch);
         ItemMap.idResMap.put(R.drawable.boat, item_boat);
+        ItemMap.idResMap.put(R.drawable.minecart, item_minecart);
         ItemMap.idResMap.put(R.drawable.powered_minecart, item_powered_minecart);
+        ItemMap.idResMap.put(R.drawable.storage_minecart, item_storage_minecart);
+        ItemMap.idResMap.put(R.drawable.minecart_with_hopper, item_minecart_with_hopper);
+        ItemMap.idResMap.put(R.drawable.minecart_with_tnt, item_minecart_with_tnt);
         ItemMap.idResMap.put(R.drawable.rails, item_rails);
         ItemMap.idResMap.put(R.drawable.powered_rail, item_powered_rail);
+        ItemMap.idResMap.put(R.drawable.detector_rail, item_detector_rail);
+        ItemMap.idResMap.put(R.drawable.activator_rail, item_activator_rail);
+        ItemMap.idResMap.put(R.drawable.tnt, item_tnt);
+        ItemMap.idResMap.put(R.drawable.jukebox, item_jukebox);
+        ItemMap.idResMap.put(R.drawable.note_block, item_note_block);
+        ItemMap.idResMap.put(R.drawable.redstone_lamp, item_redstone_lamp);
+        ItemMap.idResMap.put(R.drawable.daylight_sensor, item_daylight_sensor);
         ItemMap.idResMap.put(R.drawable.redstone_repeater, item_redstone_repeater);
+        ItemMap.idResMap.put(R.drawable.redstone_comparator, item_redstone_comparator);
+        ItemMap.idResMap.put(R.drawable.trapdoor, item_trapdoor);
+        ItemMap.idResMap.put(R.drawable.iron_trapdoor, item_iron_trapdoor);
+        ItemMap.idResMap.put(R.drawable.wood_pressure_plate, item_wood_pressure_plate);
+        ItemMap.idResMap.put(R.drawable.stone_pressure_plate, item_stone_pressure_plate);
+        ItemMap.idResMap.put(R.drawable.light_weighted_pressure_plate, item_light_weighted_pressure_plate);
+        ItemMap.idResMap.put(R.drawable.heavy_weighted_pressure_plate, item_heavy_weighted_pressure_plate);
+        ItemMap.idResMap.put(R.drawable.lever, item_lever);
+        ItemMap.idResMap.put(R.drawable.wooden_button, item_wooden_button);
+        ItemMap.idResMap.put(R.drawable.stone_button, item_stone_button);
+        ItemMap.idResMap.put(R.drawable.piston, item_piston);
+        ItemMap.idResMap.put(R.drawable.sticky_piston, item_sticky_piston);
+        ItemMap.idResMap.put(R.drawable.dispenser, item_dispenser);
+        ItemMap.idResMap.put(R.drawable.dropper, item_dropper);
+        ItemMap.idResMap.put(R.drawable.hopper, item_hopper);
+        ItemMap.idResMap.put(R.drawable.tripwire_hook, item_tripwire_hook);
+        ItemMap.idResMap.put(R.drawable.trapped_chest, item_trapped_chest);
 
         redstoneMechanismItems.add(item_redstone_dust);
         redstoneMechanismItems.add(item_redstone_torch);
         redstoneMechanismItems.add(item_boat);
+        redstoneMechanismItems.add(item_minecart);
         redstoneMechanismItems.add(item_powered_minecart);
+        redstoneMechanismItems.add(item_storage_minecart);
+        redstoneMechanismItems.add(item_minecart_with_hopper);
+        redstoneMechanismItems.add(item_minecart_with_tnt);
         redstoneMechanismItems.add(item_rails);
         redstoneMechanismItems.add(item_powered_rail);
+        redstoneMechanismItems.add(item_detector_rail);
+        redstoneMechanismItems.add(item_activator_rail);
+        redstoneMechanismItems.add(item_tnt);
+        redstoneMechanismItems.add(item_jukebox);
+        redstoneMechanismItems.add(item_note_block);
+        redstoneMechanismItems.add(item_redstone_lamp);
+        redstoneMechanismItems.add(item_daylight_sensor);
         redstoneMechanismItems.add(item_redstone_repeater);
+        redstoneMechanismItems.add(item_redstone_comparator);
+        redstoneMechanismItems.add(item_trapdoor);
+        redstoneMechanismItems.add(item_iron_trapdoor);
+        redstoneMechanismItems.add(item_wood_pressure_plate);
+        redstoneMechanismItems.add(item_stone_pressure_plate);
+        redstoneMechanismItems.add(item_light_weighted_pressure_plate);
+        redstoneMechanismItems.add(item_heavy_weighted_pressure_plate);
+        redstoneMechanismItems.add(item_lever);
+        redstoneMechanismItems.add(item_wooden_button);
+        redstoneMechanismItems.add(item_stone_button);
+        redstoneMechanismItems.add(item_piston);
+        redstoneMechanismItems.add(item_sticky_piston);
+        redstoneMechanismItems.add(item_dispenser);
+        redstoneMechanismItems.add(item_dropper);
+        redstoneMechanismItems.add(item_hopper);
+        redstoneMechanismItems.add(item_tripwire_hook);
+        redstoneMechanismItems.add(item_trapped_chest);
 
     // Food/Brewing
 
@@ -392,10 +479,13 @@ public class CraftingTable extends Activity {
         Item item_paper = new Item(R.drawable.paper, "paper");
         Item item_nether_quartz = new Item(R.drawable.nether_quartz, "nether_quartz");
         Item item_leather = new Item(R.drawable.leather, "leather");
+        Item item_gold_nugget = new Item(R.drawable.gold_nugget, "gold_nugget");
         Item item_iron = new Item(R.drawable.iron, "iron");
         Item item_gold = new Item(R.drawable.gold, "gold");
         Item item_diamond = new Item(R.drawable.diamond, "diamond");
-        Item item_gold_nugget = new Item(R.drawable.gold_nugget, "gold_nugget");
+        Item item_iron_block = new Item(R.drawable.iron_block, "iron_block");
+        Item item_gold_block = new Item(R.drawable.gold_block, "gold_block");
+        Item item_diamond_block = new Item(R.drawable.diamond_block, "diamond_block");
 
         ItemMap.idResMap.put(R.drawable.flint, item_flint);
         ItemMap.idResMap.put(R.drawable.coal, item_coal);
@@ -407,10 +497,13 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.paper, item_paper);
         ItemMap.idResMap.put(R.drawable.nether_quartz, item_nether_quartz);
         ItemMap.idResMap.put(R.drawable.leather, item_leather);
+        ItemMap.idResMap.put(R.drawable.gold_nugget, item_gold_nugget);
         ItemMap.idResMap.put(R.drawable.iron, item_iron);
         ItemMap.idResMap.put(R.drawable.gold, item_gold);
         ItemMap.idResMap.put(R.drawable.diamond, item_diamond);
-        ItemMap.idResMap.put(R.drawable.gold_nugget, item_gold_nugget);
+        ItemMap.idResMap.put(R.drawable.iron_block, item_iron_block);
+        ItemMap.idResMap.put(R.drawable.gold_block, item_gold_block);
+        ItemMap.idResMap.put(R.drawable.diamond_block, item_diamond_block);
 
         materialsMiscItems.add(item_flint);
         materialsMiscItems.add(item_coal);
@@ -422,10 +515,13 @@ public class CraftingTable extends Activity {
         materialsMiscItems.add(item_paper);
         materialsMiscItems.add(item_nether_quartz);
         materialsMiscItems.add(item_leather);
+        materialsMiscItems.add(item_gold_nugget);
         materialsMiscItems.add(item_iron);
         materialsMiscItems.add(item_gold);
         materialsMiscItems.add(item_diamond);
-        materialsMiscItems.add(item_gold_nugget);
+        materialsMiscItems.add(item_iron_block);
+        materialsMiscItems.add(item_gold_block);
+        materialsMiscItems.add(item_diamond_block);
 
         // Assign adapters
         buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);
@@ -510,7 +606,7 @@ public class CraftingTable extends Activity {
         result.setOnDragListener(new MyDragEventListener(this));
 
         // Clear Button
-        // Reset entire table and result box
+        // Reset entire table and result box and set TextView to blank
         Button clear = (Button)findViewById(R.id.clear);
         clear.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
