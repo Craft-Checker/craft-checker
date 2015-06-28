@@ -45,7 +45,12 @@ public class CraftingTable extends Activity {
     // Building/Decor
 
         Item item_torch = new Item(R.drawable.torch, "torch");
+        Item item_jack_o_lantern = new Item(R.drawable.jack_o_lantern, "jack-o-lantern");
+        Item item_wood_door = new Item(R.drawable.wood_door, "wood_door");
+        Item item_iron_door = new Item(R.drawable.iron_door, "iron_door");
         Item item_chest = new Item(R.drawable.chest, "chest");
+        Item item_ender_chest =  new Item(R.drawable.ender_chest, "ender_chest");
+        Item item_crafting_table = new Item(R.drawable.crafting_table, "crafting_table");
         Item item_furnace = new Item(R.drawable.furnace, "furnace");
         Item item_glowstone = new Item(R.drawable.glowstone, "glowstone");
         Item item_cobblestone = new Item(R.drawable.cobblestone, "cobblestone");
@@ -56,7 +61,12 @@ public class CraftingTable extends Activity {
         Item item_wooden_slab =  new Item(R.drawable.wooden_slab, "wooden_slab");
 
         ItemMap.idResMap.put(R.drawable.torch, item_torch);
+        ItemMap.idResMap.put(R.drawable.jack_o_lantern, item_jack_o_lantern);
+        ItemMap.idResMap.put(R.drawable.wood_door, item_wood_door);
+        ItemMap.idResMap.put(R.drawable.iron_door, item_iron_door);
         ItemMap.idResMap.put(R.drawable.chest, item_chest);
+        ItemMap.idResMap.put(R.drawable.ender_chest, item_ender_chest);
+        ItemMap.idResMap.put(R.drawable.crafting_table, item_crafting_table);
         ItemMap.idResMap.put(R.drawable.furnace, item_furnace);
         ItemMap.idResMap.put(R.drawable.glowstone, item_glowstone);
         ItemMap.idResMap.put(R.drawable.cobblestone, item_cobblestone);
@@ -67,7 +77,12 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.wooden_slab, item_wooden_slab);
 
         buildingDecorItems.add(item_torch);
+        buildingDecorItems.add(item_jack_o_lantern);
+        buildingDecorItems.add(item_wood_door);
+        buildingDecorItems.add(item_iron_door);
         buildingDecorItems.add(item_chest);
+        buildingDecorItems.add(item_ender_chest);
+        buildingDecorItems.add(item_crafting_table);
         buildingDecorItems.add(item_furnace);
         buildingDecorItems.add(item_glowstone);
         buildingDecorItems.add(item_cobblestone);
@@ -208,6 +223,7 @@ public class CraftingTable extends Activity {
         Item item_melon_slice = new Item(R.drawable.melon_slice, "melon_slice");
         Item item_glistering_melon = new Item(R.drawable.glistering_melon, "glistering_melon");
         Item item_wheat = new Item(R.drawable.wheat, "wheat");
+        Item item_hay_bale = new Item(R.drawable.hay_bale, "hay_bale");
         Item item_bread = new Item(R.drawable.bread, "bread");
         Item item_cookie = new Item(R.drawable.cookie, "cookie");
         Item item_carrot = new Item(R.drawable.carrot, "carrot");
@@ -246,6 +262,7 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.melon_slice, item_melon_slice);
         ItemMap.idResMap.put(R.drawable.glistering_melon, item_glistering_melon);
         ItemMap.idResMap.put(R.drawable.wheat, item_wheat);
+        ItemMap.idResMap.put(R.drawable.hay_bale, item_hay_bale);
         ItemMap.idResMap.put(R.drawable.bread, item_bread);
         ItemMap.idResMap.put(R.drawable.cookie, item_cookie);
         ItemMap.idResMap.put(R.drawable.carrot, item_carrot);
@@ -284,6 +301,7 @@ public class CraftingTable extends Activity {
         foodBrewingItems.add(item_melon_slice);
         foodBrewingItems.add(item_glistering_melon);
         foodBrewingItems.add(item_wheat);
+        foodBrewingItems.add(item_hay_bale);
         foodBrewingItems.add(item_bread);
         foodBrewingItems.add(item_cookie);
         foodBrewingItems.add(item_carrot);
@@ -476,6 +494,7 @@ public class CraftingTable extends Activity {
         Item item_feather = new Item(R.drawable.feather, "feather");
         Item item_paper = new Item(R.drawable.paper, "paper");
         Item item_nether_quartz = new Item(R.drawable.nether_quartz, "nether_quartz");
+        Item item_nether_star = new Item(R.drawable.nether_star, "nether_star");
         Item item_leather = new Item(R.drawable.leather, "leather");
         Item item_gold_nugget = new Item(R.drawable.gold_nugget, "gold_nugget");
         Item item_iron = new Item(R.drawable.iron, "iron");
@@ -484,6 +503,9 @@ public class CraftingTable extends Activity {
         Item item_iron_block = new Item(R.drawable.iron_block, "iron_block");
         Item item_gold_block = new Item(R.drawable.gold_block, "gold_block");
         Item item_diamond_block = new Item(R.drawable.diamond_block, "diamond_block");
+        Item item_obsidian = new Item(R.drawable.obsidian, "obsidian");
+        Item item_ender_pearl = new Item(R.drawable.ender_pearl, "ender_pearl");
+        Item item_eye_of_ender = new Item(R.drawable.eye_of_ender, "eye_of_ender");
 
         ItemMap.idResMap.put(R.drawable.flint, item_flint);
         ItemMap.idResMap.put(R.drawable.coal, item_coal);
@@ -495,6 +517,7 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.feather, item_feather);
         ItemMap.idResMap.put(R.drawable.paper, item_paper);
         ItemMap.idResMap.put(R.drawable.nether_quartz, item_nether_quartz);
+        ItemMap.idResMap.put(R.drawable.nether_star, item_nether_star);
         ItemMap.idResMap.put(R.drawable.leather, item_leather);
         ItemMap.idResMap.put(R.drawable.gold_nugget, item_gold_nugget);
         ItemMap.idResMap.put(R.drawable.iron, item_iron);
@@ -503,6 +526,9 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.iron_block, item_iron_block);
         ItemMap.idResMap.put(R.drawable.gold_block, item_gold_block);
         ItemMap.idResMap.put(R.drawable.diamond_block, item_diamond_block);
+        ItemMap.idResMap.put(R.drawable.obsidian, item_obsidian);
+        ItemMap.idResMap.put(R.drawable.ender_pearl, item_ender_pearl);
+        ItemMap.idResMap.put(R.drawable.eye_of_ender, item_eye_of_ender);
 
         materialsMiscItems.add(item_flint);
         materialsMiscItems.add(item_coal);
@@ -514,6 +540,7 @@ public class CraftingTable extends Activity {
         materialsMiscItems.add(item_feather);
         materialsMiscItems.add(item_paper);
         materialsMiscItems.add(item_nether_quartz);
+        materialsMiscItems.add(item_nether_star);
         materialsMiscItems.add(item_leather);
         materialsMiscItems.add(item_gold_nugget);
         materialsMiscItems.add(item_iron);
@@ -522,6 +549,9 @@ public class CraftingTable extends Activity {
         materialsMiscItems.add(item_iron_block);
         materialsMiscItems.add(item_gold_block);
         materialsMiscItems.add(item_diamond_block);
+        materialsMiscItems.add(item_obsidian);
+        materialsMiscItems.add(item_ender_pearl);
+        materialsMiscItems.add(item_eye_of_ender);
 
         // Assign adapters
         buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);

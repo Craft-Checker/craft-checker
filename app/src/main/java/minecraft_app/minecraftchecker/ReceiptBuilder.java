@@ -86,6 +86,201 @@ public class ReceiptBuilder {
                 new Item(0, "blank"),
                 new Item(R.drawable.stick, "stick"),
                 new Item(R.drawable.torch, "torch")});
+
+        receipts.add(new Item[]{                                // Jack-O-Lantern - default bottom center
+                new Item(0, "blank"),                           // Note: String spelling of "jack-o-lantern"
+                new Item(0, "blank"),                           // uses dashes instead of underscores****
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.pumpkin, "pumpkin"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch"),
+                new Item(0, "blank"),
+                new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.pumpkin, "pumpkin"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.pumpkin, "pumpkin"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.pumpkin, "pumpkin"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.pumpkin, "pumpkin"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.pumpkin, "pumpkin"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.torch, "torch"),
+                new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
+
+        receipts.add(new Item[]{                                    // Wood Door - default left
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wood_door, "wood_door")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wood_door, "wood_door")});
+
+        receipts.add(new Item[]{                                    // Iron Door - default left
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron_door, "iron_door")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron_door, "iron_door")});
+
+        receipts.add(new Item[]{                                    // Chest
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.chest, "chest")});
+
+        receipts.add(new Item[]{                                    // Ender Chest
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.ender_chest, "ender_chest")});
+
+        receipts.add(new Item[]{                                    // Crafting Table - default bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.crafting_table, "crafting_table")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.crafting_table, "crafting_table")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.crafting_table, "crafting_table")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.crafting_table, "crafting_table")});
+
+        receipts.add(new Item[]{                                    // Furnace
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.furnace, "furnace")});
+
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  REDSTONE / MECHANISM  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
         receipts.add(new Item[]{                                // Redstone Torch (6 different positions)
@@ -1838,6 +2033,18 @@ public class ReceiptBuilder {
                 new Item(R.drawable.gold_nugget, "gold_nugget"),
                 new Item(R.drawable.glistering_melon, "glistering_melon")});
 
+        receipts.add(new Item[] {                                        // Hay Bale
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.wheat, "wheat"),
+                new Item(R.drawable.hay_bale, "hay_bale")});
+
         receipts.add(new Item[]{                                         // Bread - default to center
                 new Item(0, "blank"),
                 new Item(0, "blank"),
@@ -3334,6 +3541,73 @@ public class ReceiptBuilder {
                 new Item(R.drawable.diamond_hoe, "diamond_hoe")});
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MATERIALS / MISC  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+        receipts.add(new Item[]{                                         // Stick - default bottom center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick")});
 
         receipts.add(new Item[]{                                    // Wooden Plank - Default to center
                 new Item(0, "blank"),
