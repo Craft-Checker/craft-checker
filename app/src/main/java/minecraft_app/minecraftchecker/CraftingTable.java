@@ -52,7 +52,6 @@ public class CraftingTable extends Activity {
         Item item_stone = new Item(R.drawable.stone, "stone");
         Item item_dirt = new Item(R.drawable.dirt, "dirt");
         Item item_sand = new Item(R.drawable.sand, "sand");
-        Item item_wood = new Item(R.drawable.wood, "wood");
         Item item_glass = new Item(R.drawable.glass, "glass");
         Item item_wooden_slab =  new Item(R.drawable.wooden_slab, "wooden_slab");
 
@@ -64,7 +63,6 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.stone, item_stone);
         ItemMap.idResMap.put(R.drawable.dirt, item_dirt);
         ItemMap.idResMap.put(R.drawable.sand, item_sand);
-        ItemMap.idResMap.put(R.drawable.wood, item_wood);
         ItemMap.idResMap.put(R.drawable.glass, item_glass);
         ItemMap.idResMap.put(R.drawable.wooden_slab, item_wooden_slab);
 
@@ -76,7 +74,6 @@ public class CraftingTable extends Activity {
         buildingDecorItems.add(item_stone);
         buildingDecorItems.add(item_dirt);
         buildingDecorItems.add(item_sand);
-        buildingDecorItems.add(item_wood);
         buildingDecorItems.add(item_glass);
         buildingDecorItems.add(item_wooden_slab);
 
@@ -475,6 +472,7 @@ public class CraftingTable extends Activity {
         Item item_string = new Item(R.drawable.string, "string");
         Item item_stick = new Item(R.drawable.stick, "stick");
         Item item_wooden_plank = new Item(R.drawable.wooden_plank, "wooden_plank");
+        Item item_wood = new Item(R.drawable.wood, "wood");
         Item item_feather = new Item(R.drawable.feather, "feather");
         Item item_paper = new Item(R.drawable.paper, "paper");
         Item item_nether_quartz = new Item(R.drawable.nether_quartz, "nether_quartz");
@@ -493,6 +491,7 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.string, item_string);
         ItemMap.idResMap.put(R.drawable.stick, item_stick);
         ItemMap.idResMap.put(R.drawable.wooden_plank, item_wooden_plank);
+        ItemMap.idResMap.put(R.drawable.wood, item_wood);
         ItemMap.idResMap.put(R.drawable.feather, item_feather);
         ItemMap.idResMap.put(R.drawable.paper, item_paper);
         ItemMap.idResMap.put(R.drawable.nether_quartz, item_nether_quartz);
@@ -511,6 +510,7 @@ public class CraftingTable extends Activity {
         materialsMiscItems.add(item_string);
         materialsMiscItems.add(item_stick);
         materialsMiscItems.add(item_wooden_plank);
+        materialsMiscItems.add(item_wood);
         materialsMiscItems.add(item_feather);
         materialsMiscItems.add(item_paper);
         materialsMiscItems.add(item_nether_quartz);
@@ -533,16 +533,28 @@ public class CraftingTable extends Activity {
         // Result Text Box
 
         final TextView resultText = (TextView) findViewById(R.id.resultText);
+        final ImageView bd_image = (ImageView) findViewById(R.id.bd_imageView);
+        final ImageView rm_image = (ImageView) findViewById(R.id.rm_imageView);
+        final ImageView fb_image = (ImageView) findViewById(R.id.fb_imageView);
+        final ImageView tc_image = (ImageView) findViewById(R.id.tc_imageView);
+        final ImageView mm_image = (ImageView) findViewById(R.id.mm_imageView);
 
         // Button listeners:
 
         final ListView list = (ListView)findViewById(R.id.listViewForCategory);
         list.setAdapter(buildingDecorAdapter); // default inital list shown
+        bd_image.setImageResource(R.drawable.double_right_arrow);
+
         Button buildingDecorButton = (Button) findViewById(R.id.building_decor);
         buildingDecorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list.setAdapter(buildingDecorAdapter);
+                bd_image.setImageResource(R.drawable.double_right_arrow);
+                rm_image.setImageResource(android.R.color.transparent);
+                fb_image.setImageResource(android.R.color.transparent);
+                tc_image.setImageResource(android.R.color.transparent);
+                mm_image.setImageResource(android.R.color.transparent);
             }
         });
         Button redstoneMechanismButton = (Button) findViewById(R.id.redstone_mechanism);
@@ -550,6 +562,11 @@ public class CraftingTable extends Activity {
             @Override
             public void onClick(View view) {
                 list.setAdapter(redstoneMechanismAdapter);
+                bd_image.setImageResource(android.R.color.transparent);
+                rm_image.setImageResource(R.drawable.double_right_arrow);
+                fb_image.setImageResource(android.R.color.transparent);
+                tc_image.setImageResource(android.R.color.transparent);
+                mm_image.setImageResource(android.R.color.transparent);
             }
         });
         Button foodBrewingButton = (Button) findViewById(R.id.food_brewing);
@@ -557,6 +574,11 @@ public class CraftingTable extends Activity {
             @Override
             public void onClick(View view) {
                 list.setAdapter(foodBrewingAdapter);
+                bd_image.setImageResource(android.R.color.transparent);
+                rm_image.setImageResource(android.R.color.transparent);
+                fb_image.setImageResource(R.drawable.double_right_arrow);
+                tc_image.setImageResource(android.R.color.transparent);
+                mm_image.setImageResource(android.R.color.transparent);
             }
         });
         Button toolsCombatButton = (Button) findViewById(R.id.tools_combat);
@@ -564,6 +586,11 @@ public class CraftingTable extends Activity {
             @Override
             public void onClick(View view) {
                 list.setAdapter(toolsCombatAdapter);
+                bd_image.setImageResource(android.R.color.transparent);
+                rm_image.setImageResource(android.R.color.transparent);
+                fb_image.setImageResource(android.R.color.transparent);
+                tc_image.setImageResource(R.drawable.double_right_arrow);
+                mm_image.setImageResource(android.R.color.transparent);
             }
         });
         Button materialsMiscButton = (Button) findViewById(R.id.materials_misc);
@@ -571,6 +598,11 @@ public class CraftingTable extends Activity {
             @Override
             public void onClick(View view) {
                 list.setAdapter(materialMiscAdapter);
+                bd_image.setImageResource(android.R.color.transparent);
+                rm_image.setImageResource(android.R.color.transparent);
+                fb_image.setImageResource(android.R.color.transparent);
+                tc_image.setImageResource(android.R.color.transparent);
+                mm_image.setImageResource(R.drawable.double_right_arrow);
             }
         });
 

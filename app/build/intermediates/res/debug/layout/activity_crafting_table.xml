@@ -220,11 +220,14 @@
 
     <ListView
         android:id="@+id/listViewForCategory"
-        android:layout_width="wrap_content"
+        android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/building_decor"
         android:layout_alignLeft="@+id/clear"
-        android:layout_alignStart="@+id/clear">
+        android:layout_marginLeft="25dp"
+        android:layout_alignStart="@+id/clear"
+        android:gravity="center_horizontal"
+        android:background="@color/light_blue">
 
     </ListView>
 
@@ -238,11 +241,57 @@
         android:id="@+id/resultText"
         android:gravity="right"
         android:layout_above="@+id/listViewForCategory"
-        android:layout_alignRight="@+id/listViewForCategory"
-        android:layout_alignEnd="@+id/listViewForCategory"
-        android:layout_toEndOf="@+id/building_decor"
         android:layout_below="@+id/result"
         android:layout_toRightOf="@+id/building_decor"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="12dp"
+        android:layout_alignRight="@+id/result"
+        android:layout_alignEnd="@+id/result" />
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:id="@+id/bd_imageView"
+        android:layout_above="@+id/redstone_mechanism"
+        android:layout_toRightOf="@+id/building_decor"
+        android:layout_toEndOf="@+id/building_decor"
+        android:paddingBottom="4dp"/>
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:id="@+id/rm_imageView"
+        android:layout_above="@+id/food_brewing"
+        android:layout_alignLeft="@+id/bd_imageView"
+        android:layout_alignRight="@+id/bd_imageView"
+        android:layout_alignEnd="@+id/bd_imageView"
+        android:paddingBottom="4dp"/>
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:id="@+id/fb_imageView"
+        android:layout_above="@+id/tools_combat"
+        android:layout_alignLeft="@+id/rm_imageView"
+        android:layout_alignStart="@+id/rm_imageView"
+        android:paddingBottom="4dp"/>
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:id="@+id/tc_imageView"
+        android:layout_above="@+id/materials_misc"
+        android:layout_alignLeft="@+id/fb_imageView"
+        android:layout_alignStart="@+id/fb_imageView"
+        android:paddingBottom="4dp"/>
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:id="@+id/mm_imageView"
+        android:layout_alignBottom="@+id/materials_misc"
+        android:layout_alignLeft="@+id/tc_imageView"
+        android:layout_alignStart="@+id/tc_imageView"
+        android:paddingBottom="4dp"/>
+
 </RelativeLayout>
 <!-- From: file:/Users/Marion/AndroidStudioProjects/MinecraftChecker/app/src/main/res/layout/activity_crafting_table.xml -->
