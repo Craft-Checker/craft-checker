@@ -154,6 +154,74 @@ public class ReceiptBuilder {
                 new Item(R.drawable.torch, "torch"),
                 new Item(R.drawable.jack_o_lantern, "jack-o-lantern")});
 
+        receipts.add(new Item[]{                                    // Glass Pane - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass_pane, "glass_pane")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glass_pane, "glass_pane")});
+
+        receipts.add(new Item[]{                                    // Glowstone - default bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone, "glowstone")});
+        receipts.add(new Item[] {
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone, "glowstone")});
+        receipts.add(new Item[] {
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone, "glowstone")});
+        receipts.add(new Item[] {
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(0, "blank"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone_dust, "glowstone_dust"),
+                new Item(R.drawable.glowstone, "glowstone")});
+
         receipts.add(new Item[]{                                    // Wood Door - default left
                 new Item(R.drawable.wooden_plank, "wooden_plank"),
                 new Item(R.drawable.wooden_plank, "wooden_plank"),
@@ -280,6 +348,215 @@ public class ReceiptBuilder {
                 new Item(R.drawable.cobblestone, "cobblestone"),
                 new Item(R.drawable.cobblestone, "cobblestone"),
                 new Item(R.drawable.furnace, "furnace")});
+
+        receipts.add(new Item[]{                                    // Beacon
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.nether_star, "nether_star"),
+                new Item(R.drawable.glass, "glass"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.beacon, "beacon")});
+
+        receipts.add(new Item[]{                                    // Enchantment Table
+                new Item(0, "blank"),
+                new Item(R.drawable.book, "book"),
+                new Item(0, "blank"),
+                new Item(R.drawable.diamond, "diamond"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.diamond, "diamond"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.obsidian, "obsidian"),
+                new Item(R.drawable.enchantment_table, "enchantment_table")});
+
+        receipts.add(new Item[]{                                    // Anvil
+                new Item(R.drawable.iron_block, "iron_block"),
+                new Item(R.drawable.iron_block, "iron_block"),
+                new Item(R.drawable.iron_block, "iron_block"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.anvil, "anvil")});
+
+        receipts.add(new Item[]{                                    // Flower Pot - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_brick, "clay_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_brick, "clay_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_brick, "clay_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.flower_pot, "flower_pot")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.clay_brick, "clay_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_brick, "clay_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_brick, "clay_brick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.flower_pot, "flower_pot")});
+
+        receipts.add(new Item[]{                                    // Ladder
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.ladder, "ladder")});
+
+        receipts.add(new Item[]{                                    // Fence - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.fence, "fence")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.fence, "fence")});
+
+        receipts.add(new Item[]{                                    // Nether Brick Fence - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_fence, "nether_brick_fence")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_fence, "nether_brick_fence")});
+
+        receipts.add(new Item[]{                                    // Fence Gate - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.fence_gate, "fence_gate")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.stick, "stick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.fence_gate, "fence_gate")});
+
+        receipts.add(new Item[]{                                    // Iron Bars - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron_bars, "iron_bars")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(R.drawable.iron, "iron"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.iron_bars, "iron_bars")});
+
+        receipts.add(new Item[]{                                    // Nether Brick Block - default bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block")});
+        receipts.add(new Item[] {
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block")});
+        receipts.add(new Item[] {
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block")});
+        receipts.add(new Item[] {
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick, "nether_brick"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block")});
+
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  REDSTONE / MECHANISM  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -3541,6 +3818,142 @@ public class ReceiptBuilder {
                 new Item(R.drawable.diamond_hoe, "diamond_hoe")});
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MATERIALS / MISC  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+        receipts.add(new Item[]{                                    // Block of Coal
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.coal, "coal"),
+                new Item(R.drawable.block_of_coal, "block_of_coal")});
+
+        receipts.add(new Item[]{                                    // Book - default center
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(R.drawable.book, "book")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.book, "book")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.paper, "paper"),
+                new Item(R.drawable.book, "book")});
+
+        receipts.add(new Item[]{                                    // Book and Quill - default bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.feather, "feather"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ink_sac, "ink_sac"),
+                new Item(R.drawable.book, "book"),
+                new Item(0, "blank"),
+                new Item(R.drawable.book_and_quill, "book_and_quill")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.feather, "feather"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ink_sac, "ink_sac"),
+                new Item(R.drawable.book, "book"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.book_and_quill, "book_and_quill")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.feather, "feather"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ink_sac, "ink_sac"),
+                new Item(R.drawable.book, "book"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.book_and_quill, "book_and_quill")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.feather, "feather"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ink_sac, "ink_sac"),
+                new Item(R.drawable.book, "book"),
+                new Item(R.drawable.book_and_quill, "book_and_quill")});
+
+        receipts.add(new Item[]{                                    // Clay Block - default bottom left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_block, "clay_block")});
+        receipts.add(new Item[] {
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_block, "clay_block")});
+        receipts.add(new Item[] {
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay_block, "clay_block")});
+        receipts.add(new Item[] {
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(0, "blank"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay, "clay"),
+                new Item(R.drawable.clay_block, "clay_block")});
 
         receipts.add(new Item[]{                                         // Stick - default bottom center
                 new Item(0, "blank"),
