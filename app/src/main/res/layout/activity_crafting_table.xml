@@ -224,7 +224,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/building_decor"
         android:layout_alignLeft="@+id/clear"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="50dp"
         android:layout_alignStart="@+id/clear"
         android:gravity="center_horizontal"
         android:background="@color/light_blue">
@@ -235,7 +235,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:text=""
         android:textColor="@color/white"
         android:id="@+id/resultText"

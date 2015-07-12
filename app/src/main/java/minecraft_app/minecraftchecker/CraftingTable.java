@@ -2,6 +2,8 @@ package minecraft_app.minecraftchecker;
 
 //import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
+import android.graphics.Typeface;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,6 +49,7 @@ public class CraftingTable extends Activity {
         Item item_torch = new Item(R.drawable.torch, "torch");
         Item item_jack_o_lantern = new Item(R.drawable.jack_o_lantern, "jack-o-lantern");
         Item item_glowstone = new Item(R.drawable.glowstone, "glowstone");
+        Item item_sea_lantern = new Item(R.drawable.sea_lantern, "sea_lantern");
         Item item_wood_door = new Item(R.drawable.wood_door, "wood_door");
         Item item_iron_door = new Item(R.drawable.iron_door, "iron_door");
         Item item_chest = new Item(R.drawable.chest, "chest");
@@ -64,16 +67,34 @@ public class CraftingTable extends Activity {
         Item item_nether_brick_fence = new Item(R.drawable.nether_brick_fence, "nether_brick_fence");
         Item item_fence_gate = new Item(R.drawable.fence_gate, "fence_gate");
         Item item_iron_bars = new Item(R.drawable.iron_bars, "iron_bars");
+        Item item_sign = new Item(R.drawable.sign, "sign");
+        Item item_bed = new Item(R.drawable.bed, "bed");
+        Item item_painting = new Item(R.drawable.painting, "painting");
+        Item item_banner = new Item(R.drawable.banner, "banner");
+        Item item_item_frame = new Item(R.drawable.item_frame, "item_frame");
+        Item item_armor_stand = new Item(R.drawable.armor_stand, "armor_stand");
+        Item item_bookshelf = new Item(R.drawable.bookshelf, "bookshelf");
         Item item_cobblestone = new Item(R.drawable.cobblestone, "cobblestone");
         Item item_stone = new Item(R.drawable.stone, "stone");
+        Item item_stone_brick = new Item(R.drawable.stone_brick, "stone_brick");
+        Item item_chiseled_stone_brick = new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick");
+        Item item_brick = new Item(R.drawable.brick, "brick");
         Item item_nether_brick_block = new Item(R.drawable.nether_brick_block, "nether_brick_block");
         Item item_dirt = new Item(R.drawable.dirt, "dirt");
+        Item item_gravel = new Item(R.drawable.gravel, "gravel");
+        Item item_coarse_dirt = new Item(R.drawable.coarse_dirt, "coarse_dirt");
         Item item_sand = new Item(R.drawable.sand, "sand");
+        Item item_sandstone = new Item(R.drawable.sandstone, "sandstone");
+        Item item_chiseled_sandstone = new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone");
         Item item_wooden_slab =  new Item(R.drawable.wooden_slab, "wooden_slab");
+        Item item_stone_slab = new Item(R.drawable.stone_slab, "stone_slab");
+        Item item_stone_brick_slab = new Item(R.drawable.stone_brick_slab, "stone_brick_slab");
+        Item item_sandstone_slab = new Item(R.drawable.sandstone_slab, "sandstone_slab");
 
         ItemMap.idResMap.put(R.drawable.torch, item_torch);
         ItemMap.idResMap.put(R.drawable.jack_o_lantern, item_jack_o_lantern);
         ItemMap.idResMap.put(R.drawable.glowstone, item_glowstone);
+        ItemMap.idResMap.put(R.drawable.sea_lantern, item_sea_lantern);
         ItemMap.idResMap.put(R.drawable.wood_door, item_wood_door);
         ItemMap.idResMap.put(R.drawable.iron_door, item_iron_door);
         ItemMap.idResMap.put(R.drawable.chest, item_chest);
@@ -91,16 +112,34 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.nether_brick_fence, item_nether_brick_fence);
         ItemMap.idResMap.put(R.drawable.fence_gate, item_fence_gate);
         ItemMap.idResMap.put(R.drawable.iron_bars, item_iron_bars);
+        ItemMap.idResMap.put(R.drawable.sign, item_sign);
+        ItemMap.idResMap.put(R.drawable.bed, item_bed);
+        ItemMap.idResMap.put(R.drawable.painting, item_painting);
+        ItemMap.idResMap.put(R.drawable.banner, item_banner);
+        ItemMap.idResMap.put(R.drawable.item_frame, item_item_frame);
+        ItemMap.idResMap.put(R.drawable.armor_stand, item_armor_stand);
+        ItemMap.idResMap.put(R.drawable.bookshelf, item_bookshelf);
         ItemMap.idResMap.put(R.drawable.cobblestone, item_cobblestone);
         ItemMap.idResMap.put(R.drawable.stone, item_stone);
+        ItemMap.idResMap.put(R.drawable.stone_brick, item_stone_brick);
+        ItemMap.idResMap.put(R.drawable.chiseled_stone_brick, item_chiseled_stone_brick);
+        ItemMap.idResMap.put(R.drawable.brick, item_brick);
         ItemMap.idResMap.put(R.drawable.nether_brick_block, item_nether_brick_block);
         ItemMap.idResMap.put(R.drawable.dirt, item_dirt);
+        ItemMap.idResMap.put(R.drawable.gravel, item_gravel);
+        ItemMap.idResMap.put(R.drawable.coarse_dirt, item_coarse_dirt);
         ItemMap.idResMap.put(R.drawable.sand, item_sand);
+        ItemMap.idResMap.put(R.drawable.sandstone, item_sandstone);
+        ItemMap.idResMap.put(R.drawable.chiseled_sandstone, item_chiseled_sandstone);
         ItemMap.idResMap.put(R.drawable.wooden_slab, item_wooden_slab);
+        ItemMap.idResMap.put(R.drawable.stone_slab, item_stone_slab);
+        ItemMap.idResMap.put(R.drawable.stone_brick_slab, item_stone_brick_slab);
+        ItemMap.idResMap.put(R.drawable.sandstone_slab, item_sandstone_slab);
 
         buildingDecorItems.add(item_torch);
         buildingDecorItems.add(item_jack_o_lantern);
         buildingDecorItems.add(item_glowstone);
+        buildingDecorItems.add(item_sea_lantern);
         buildingDecorItems.add(item_wood_door);
         buildingDecorItems.add(item_iron_door);
         buildingDecorItems.add(item_chest);
@@ -118,12 +157,29 @@ public class CraftingTable extends Activity {
         buildingDecorItems.add(item_nether_brick_fence);
         buildingDecorItems.add(item_fence_gate);
         buildingDecorItems.add(item_iron_bars);
+        buildingDecorItems.add(item_sign);
+        buildingDecorItems.add(item_bed);
+        buildingDecorItems.add(item_painting);
+        buildingDecorItems.add(item_banner);
+        buildingDecorItems.add(item_item_frame);
+        buildingDecorItems.add(item_armor_stand);
+        buildingDecorItems.add(item_bookshelf);
         buildingDecorItems.add(item_cobblestone);
         buildingDecorItems.add(item_stone);
+        buildingDecorItems.add(item_stone_brick);
+        buildingDecorItems.add(item_chiseled_stone_brick);
+        buildingDecorItems.add(item_brick);
         buildingDecorItems.add(item_nether_brick_block);
         buildingDecorItems.add(item_dirt);
+        buildingDecorItems.add(item_gravel);
+        buildingDecorItems.add(item_coarse_dirt);
         buildingDecorItems.add(item_sand);
+        buildingDecorItems.add(item_sandstone);
+        buildingDecorItems.add(item_chiseled_sandstone);
         buildingDecorItems.add(item_wooden_slab);
+        buildingDecorItems.add(item_stone_slab);
+        buildingDecorItems.add(item_stone_brick_slab);
+        buildingDecorItems.add(item_sandstone_slab);
 
     // Redstone/Mechanism
 
@@ -547,7 +603,10 @@ public class CraftingTable extends Activity {
         Item item_obsidian = new Item(R.drawable.obsidian, "obsidian");
         Item item_ender_pearl = new Item(R.drawable.ender_pearl, "ender_pearl");
         Item item_eye_of_ender = new Item(R.drawable.eye_of_ender, "eye_of_ender");
+        Item item_prismarine_crystals = new Item(R.drawable.prismarine_crystals, "prismarine_crystals");
+        Item item_prismarine_shard = new Item(R.drawable.prismarine_shard, "prismarine_shard");
         Item item_ink_sac = new Item(R.drawable.ink_sac, "ink_sac");
+        Item item_wool = new Item(R.drawable.wool, "wool");
 
         ItemMap.idResMap.put(R.drawable.flint, item_flint);
         ItemMap.idResMap.put(R.drawable.coal, item_coal);
@@ -579,7 +638,10 @@ public class CraftingTable extends Activity {
         ItemMap.idResMap.put(R.drawable.obsidian, item_obsidian);
         ItemMap.idResMap.put(R.drawable.ender_pearl, item_ender_pearl);
         ItemMap.idResMap.put(R.drawable.eye_of_ender, item_eye_of_ender);
+        ItemMap.idResMap.put(R.drawable.prismarine_crystals, item_prismarine_crystals);
+        ItemMap.idResMap.put(R.drawable.prismarine_shard, item_prismarine_shard);
         ItemMap.idResMap.put(R.drawable.ink_sac, item_ink_sac);
+        ItemMap.idResMap.put(R.drawable.wool, item_wool);
 
         materialsMiscItems.add(item_flint);
         materialsMiscItems.add(item_coal);
@@ -611,7 +673,10 @@ public class CraftingTable extends Activity {
         materialsMiscItems.add(item_obsidian);
         materialsMiscItems.add(item_ender_pearl);
         materialsMiscItems.add(item_eye_of_ender);
+        materialsMiscItems.add(item_prismarine_crystals);
+        materialsMiscItems.add(item_prismarine_shard);
         materialsMiscItems.add(item_ink_sac);
+        materialsMiscItems.add(item_wool);
 
         // Assign adapters
         buildingDecorAdapter = new ItemAdapter(this, buildingDecorItems);
@@ -620,9 +685,12 @@ public class CraftingTable extends Activity {
         toolsCombatAdapter = new ItemAdapter(this, toolsCombatItems);
         materialMiscAdapter =  new ItemAdapter(this, materialsMiscItems);
 
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "minecraft_font.ttf");
+
         // Result Text Box
 
         final TextView resultText = (TextView) findViewById(R.id.resultText);
+        resultText.setTypeface(typeFace);
         final ImageView bd_image = (ImageView) findViewById(R.id.bd_imageView);
         final ImageView rm_image = (ImageView) findViewById(R.id.rm_imageView);
         final ImageView fb_image = (ImageView) findViewById(R.id.fb_imageView);
@@ -630,12 +698,12 @@ public class CraftingTable extends Activity {
         final ImageView mm_image = (ImageView) findViewById(R.id.mm_imageView);
 
         // Button listeners:
-
         final ListView list = (ListView)findViewById(R.id.listViewForCategory);
         list.setAdapter(buildingDecorAdapter); // default inital list shown
         bd_image.setImageResource(R.drawable.double_right_arrow);
 
         Button buildingDecorButton = (Button) findViewById(R.id.building_decor);
+        buildingDecorButton.setTypeface(typeFace);
         buildingDecorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -648,6 +716,7 @@ public class CraftingTable extends Activity {
             }
         });
         Button redstoneMechanismButton = (Button) findViewById(R.id.redstone_mechanism);
+        redstoneMechanismButton.setTypeface(typeFace);
         redstoneMechanismButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -660,6 +729,7 @@ public class CraftingTable extends Activity {
             }
         });
         Button foodBrewingButton = (Button) findViewById(R.id.food_brewing);
+        foodBrewingButton.setTypeface(typeFace);
         foodBrewingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -672,6 +742,7 @@ public class CraftingTable extends Activity {
             }
         });
         Button toolsCombatButton = (Button) findViewById(R.id.tools_combat);
+        toolsCombatButton.setTypeface(typeFace);
         toolsCombatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -684,6 +755,7 @@ public class CraftingTable extends Activity {
             }
         });
         Button materialsMiscButton = (Button) findViewById(R.id.materials_misc);
+        materialsMiscButton.setTypeface(typeFace);
         materialsMiscButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -730,6 +802,7 @@ public class CraftingTable extends Activity {
         // Clear Button
         // Reset entire table and result box and set TextView to blank
         Button clear = (Button)findViewById(R.id.clear);
+        clear.setTypeface(typeFace);
         clear.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 topLeft.setImageResource(android.R.color.transparent);
