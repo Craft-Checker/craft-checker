@@ -1937,6 +1937,108 @@ public class BuildingDecor {
                 new Item(R.drawable.nether_brick_block, "nether_brick_block"),
                 new Item(R.drawable.nether_brick_block, "nether_brick_block"),
                 new Item(R.drawable.nether_brick_slab, "nether_brick_slab")});
+
+        receipts.add(new Item[]{                                // Sandstone Slab - default center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.sandstone_slab, "sandstone_slab")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.sandstone_slab, "sandstone_slab")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone_slab, "sandstone_slab")});
+
+        receipts.add(new Item[]{                                // Red Sandstone Slab - default center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.red_sandstone_slab, "red_sandstone_slab")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.red_sandstone_slab, "red_sandstone_slab")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone_slab, "red_sandstone_slab")});
+
+        receipts.add(new Item[]{                                // Quartz Slab - default center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.quartz_slab, "quartz_slab")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.quartz_slab, "quartz_slab")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.quartz_slab, "quartz_slab")});
     }
     public ArrayList<Item[]> getBuildingDecorReceipts() {
         return receipts;
