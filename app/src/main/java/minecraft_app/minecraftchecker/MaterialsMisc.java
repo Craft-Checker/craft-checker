@@ -397,6 +397,211 @@ public class MaterialsMisc {
                 new Item(R.drawable.diamond, "diamond"),
                 new Item(R.drawable.diamond, "diamond"),
                 new Item(R.drawable.diamond_block, "diamond_block")});
+
+        receipts.add(new Item[]{                                    // Eye of Ender - default bottom, center
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ender_pearl, "ender_pearl"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.blaze_powder, "blaze_powder"),
+                new Item(0, "blank"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.ender_pearl, "ender_pearl"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.blaze_powder, "blaze_powder"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.ender_pearl, "ender_pearl"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.blaze_powder, "blaze_powder"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ender_pearl, "ender_pearl"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.blaze_powder, "blaze_powder"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ender_pearl, "ender_pearl"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.blaze_powder, "blaze_powder"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.ender_pearl, "ender_pearl"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.blaze_powder, "blaze_powder"),
+                new Item(R.drawable.eye_of_ender, "eye_of_ender")});
+
+        receipts.add(new Item[]{                                    // Wool - default bottom, left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wool, "wool")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wool, "wool")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wool, "wool")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(0, "blank"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.string, "string"),
+                new Item(R.drawable.wool, "wool")});
+
+        receipts.add(new Item[]{                                    // Slime Block
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_ball, "slime_ball"),
+                new Item(R.drawable.slime_block, "slime_block")});
+
+        receipts.add(new Item[]{                                    // Block of Redstone
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.redstone_dust, "redstone_dust"),
+                new Item(R.drawable.block_of_redstone, "block_of_redstone")});
+
+        receipts.add(new Item[]{                                    // Block of Emerald
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.emerald, "emerald"),
+                new Item(R.drawable.block_of_emerald, "block_of_emerald")});
+
+        receipts.add(new Item[]{                                    // Lapis Lazuli Block
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli, "lapis_lazuli"),
+                new Item(R.drawable.lapis_lazuli_block, "lapis_lazuli_block")});
+
+        receipts.add(new Item[]{                                    // Snow - default bottom, left
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snow, "snow")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snow, "snow")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snow, "snow")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(0, "blank"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snowball, "snowball"),
+                new Item(R.drawable.snow, "snow")});
     }
     public ArrayList<Item[]> getMaterialsMiscReceipts() {
         return receipts;

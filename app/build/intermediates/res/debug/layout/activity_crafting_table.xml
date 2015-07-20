@@ -242,10 +242,10 @@
         android:gravity="right"
         android:layout_above="@+id/listViewForCategory"
         android:layout_below="@+id/result"
-        android:layout_toRightOf="@+id/building_decor"
-        android:layout_marginLeft="12dp"
         android:layout_alignRight="@+id/result"
-        android:layout_alignEnd="@+id/result" />
+        android:layout_alignEnd="@+id/result"
+        android:layout_toRightOf="@+id/building_decor"
+        android:layout_toEndOf="@+id/building_decor" />
 
     <ImageView
         android:layout_width="43dp"

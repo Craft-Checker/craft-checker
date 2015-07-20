@@ -40,6 +40,8 @@ public class CraftingTable extends Activity {
         setContentView(R.layout.activity_crafting_table);
 
     // Populating lists that will appear when buttons are clicked
+    // Note: Population is now done in BuildLists class and the
+    // results are returned here
 
         lists = new BuildLists();
         buildingDecorItems = lists.getBuildingDecorItems();

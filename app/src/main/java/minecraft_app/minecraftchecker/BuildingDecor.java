@@ -2039,6 +2039,202 @@ public class BuildingDecor {
                 new Item(R.drawable.block_of_quartz, "block_of_quartz"),
                 new Item(R.drawable.block_of_quartz, "block_of_quartz"),
                 new Item(R.drawable.quartz_slab, "quartz_slab")});
+
+        receipts.add(new Item[]{                                // Wood Stairs
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wooden_plank, "wooden_plank"),
+                new Item(R.drawable.wood_stairs, "wood_stairs")});
+
+        receipts.add(new Item[]{                                // Cobblestone Stairs
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone_stairs, "cobblestone_stairs")});
+
+        receipts.add(new Item[]{                                // Stone Brick Stairs - default uses stone brick blocks
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stone_brick, "stone_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.stone_brick, "stone_brick"),
+                new Item(R.drawable.stone_brick, "stone_brick"),
+                new Item(R.drawable.stone_brick, "stone_brick"),
+                new Item(R.drawable.stone_brick, "stone_brick"),
+                new Item(R.drawable.stone_brick, "stone_brick"),
+                new Item(R.drawable.stone_brick_stairs, "stone_brick_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick"),
+                new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick"),
+                new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick"),
+                new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick"),
+                new Item(R.drawable.chiseled_stone_brick, "chiseled_stone_brick"),
+                new Item(R.drawable.stone_brick_stairs, "stone_brick_stairs")});
+
+        receipts.add(new Item[]{                                // Brick Stairs
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.brick, "brick"),
+                new Item(0, "blank"),
+                new Item(R.drawable.brick, "brick"),
+                new Item(R.drawable.brick, "brick"),
+                new Item(R.drawable.brick, "brick"),
+                new Item(R.drawable.brick, "brick"),
+                new Item(R.drawable.brick, "brick"),
+                new Item(R.drawable.brick_stairs, "brick_stairs")});
+
+        receipts.add(new Item[]{                                // Nether Brick Stairs
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(0, "blank"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_block, "nether_brick_block"),
+                new Item(R.drawable.nether_brick_stairs, "nether_brick_stairs")});
+
+        receipts.add(new Item[]{                                // Sandstone Stairs - default uses sandstone
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone, "sandstone"),
+                new Item(R.drawable.sandstone_stairs, "sandstone_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.smooth_sandstone, "smooth_sandstone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.smooth_sandstone, "smooth_sandstone"),
+                new Item(R.drawable.smooth_sandstone, "smooth_sandstone"),
+                new Item(R.drawable.smooth_sandstone, "smooth_sandstone"),
+                new Item(R.drawable.smooth_sandstone, "smooth_sandstone"),
+                new Item(R.drawable.smooth_sandstone, "smooth_sandstone"),
+                new Item(R.drawable.sandstone_stairs, "sandstone_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone"),
+                new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone"),
+                new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone"),
+                new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone"),
+                new Item(R.drawable.chiseled_sandstone, "chiseled_sandstone"),
+                new Item(R.drawable.sandstone_stairs, "sandstone_stairs")});
+
+        receipts.add(new Item[]{                                // Red Sandstone Stairs - default uses red sandstone
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone, "red_sandstone"),
+                new Item(R.drawable.red_sandstone_stairs, "red_sandstone_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.smooth_red_sandstone, "smooth_red_sandstone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.smooth_red_sandstone, "smooth_red_sandstone"),
+                new Item(R.drawable.smooth_red_sandstone, "smooth_red_sandstone"),
+                new Item(R.drawable.smooth_red_sandstone, "smooth_red_sandstone"),
+                new Item(R.drawable.smooth_red_sandstone, "smooth_red_sandstone"),
+                new Item(R.drawable.smooth_red_sandstone, "smooth_red_sandstone"),
+                new Item(R.drawable.red_sandstone_stairs, "red_sandstone_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_red_sandstone, "chiseled_red_sandstone"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_red_sandstone, "chiseled_red_sandstone"),
+                new Item(R.drawable.chiseled_red_sandstone, "chiseled_red_sandstone"),
+                new Item(R.drawable.chiseled_red_sandstone, "chiseled_red_sandstone"),
+                new Item(R.drawable.chiseled_red_sandstone, "chiseled_red_sandstone"),
+                new Item(R.drawable.chiseled_red_sandstone, "chiseled_red_sandstone"),
+                new Item(R.drawable.red_sandstone_stairs, "red_sandstone_stairs")});
+
+        receipts.add(new Item[]{                                // Nether Quartz Stairs - default uses block of quartz
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(0, "blank"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.block_of_quartz, "block_of_quartz"),
+                new Item(R.drawable.nether_quartz_stairs, "nether_quartz_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_quartz, "chiseled_quartz"),
+                new Item(0, "blank"),
+                new Item(R.drawable.chiseled_quartz, "chiseled_quartz"),
+                new Item(R.drawable.chiseled_quartz, "chiseled_quartz"),
+                new Item(R.drawable.chiseled_quartz, "chiseled_quartz"),
+                new Item(R.drawable.chiseled_quartz, "chiseled_quartz"),
+                new Item(R.drawable.chiseled_quartz, "chiseled_quartz"),
+                new Item(R.drawable.nether_quartz_stairs, "nether_quartz_stairs")});
+        receipts.add(new Item[]{
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.pillar_quartz, "pillar_quartz"),
+                new Item(0, "blank"),
+                new Item(R.drawable.pillar_quartz, "pillar_quartz"),
+                new Item(R.drawable.pillar_quartz, "pillar_quartz"),
+                new Item(R.drawable.pillar_quartz, "pillar_quartz"),
+                new Item(R.drawable.pillar_quartz, "pillar_quartz"),
+                new Item(R.drawable.pillar_quartz, "pillar_quartz"),
+                new Item(R.drawable.nether_quartz_stairs, "nether_quartz_stairs")});
+
+        receipts.add(new Item[]{                                // Cobblestone Wall - default bottom
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone_wall, "cobblestone_wall")});
+        receipts.add(new Item[]{
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(R.drawable.cobblestone, "cobblestone"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(0, "blank"),
+                new Item(R.drawable.cobblestone_wall, "cobblestone_wall")});
     }
     public ArrayList<Item[]> getBuildingDecorReceipts() {
         return receipts;

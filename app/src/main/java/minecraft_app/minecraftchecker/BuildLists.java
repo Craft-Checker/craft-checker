@@ -6,6 +6,9 @@ import la_hacks.minecraftchecker.R;
 
 /**
  * Created by Marion on 7/19/15.
+ *
+ * This class simply populates the lists that will be used to construct
+ *  the list adapters in the main Activity. It also populates the hashmap.
  */
 public class BuildLists {
     private ArrayList<Item> buildingDecorItems;
@@ -89,6 +92,15 @@ public class BuildLists {
         Item item_sandstone_slab = new Item(R.drawable.sandstone_slab, "sandstone_slab");
         Item item_red_sandstone_slab = new Item(R.drawable.red_sandstone_slab, "red_sandstone_slab");
         Item item_quartz_slab = new Item(R.drawable.quartz_slab, "quartz_slab");
+        Item item_wood_stairs = new Item(R.drawable.wood_stairs, "wood_stairs");
+        Item item_cobblestone_stairs = new Item(R.drawable.cobblestone_stairs, "cobblestone_stairs");
+        Item item_stone_brick_stairs = new Item(R.drawable.stone_brick_stairs, "stone_brick_stairs");
+        Item item_brick_stairs = new Item(R.drawable.brick_stairs, "brick_stairs");
+        Item item_nether_brick_stairs = new Item(R.drawable.nether_brick_stairs, "nether_brick_stairs");
+        Item item_sandstone_stairs = new Item(R.drawable.sandstone_stairs, "sandstone_stairs");
+        Item item_red_sandstone_stairs = new Item(R.drawable.red_sandstone_stairs, "red_sandstone_stairs");
+        Item item_nether_quartz_stairs = new Item(R.drawable.nether_quartz_stairs, "nether_quartz_stairs");
+        Item item_cobblestone_wall = new Item(R.drawable.cobblestone_wall, "cobblestone_wall");
 
         ItemMap.idResMap.put(R.drawable.torch, item_torch);
         ItemMap.idResMap.put(R.drawable.jack_o_lantern, item_jack_o_lantern);
@@ -156,6 +168,15 @@ public class BuildLists {
         ItemMap.idResMap.put(R.drawable.sandstone_slab, item_sandstone_slab);
         ItemMap.idResMap.put(R.drawable.red_sandstone_slab, item_red_sandstone_slab);
         ItemMap.idResMap.put(R.drawable.quartz_slab, item_quartz_slab);
+        ItemMap.idResMap.put(R.drawable.wood_stairs, item_wood_stairs);
+        ItemMap.idResMap.put(R.drawable.cobblestone_stairs, item_cobblestone_stairs);
+        ItemMap.idResMap.put(R.drawable.stone_brick_stairs, item_stone_brick_stairs);
+        ItemMap.idResMap.put(R.drawable.brick_stairs, item_brick_stairs);
+        ItemMap.idResMap.put(R.drawable.nether_brick_stairs, item_nether_brick_stairs);
+        ItemMap.idResMap.put(R.drawable.sandstone_stairs, item_sandstone_stairs);
+        ItemMap.idResMap.put(R.drawable.red_sandstone_stairs, item_red_sandstone_stairs);
+        ItemMap.idResMap.put(R.drawable.nether_quartz_stairs, item_nether_quartz_stairs);
+        ItemMap.idResMap.put(R.drawable.cobblestone_wall, item_cobblestone_wall);
 
         buildingDecorItems.add(item_torch);
         buildingDecorItems.add(item_jack_o_lantern);
@@ -223,6 +244,15 @@ public class BuildLists {
         buildingDecorItems.add(item_sandstone_slab);
         buildingDecorItems.add(item_red_sandstone_slab);
         buildingDecorItems.add(item_quartz_slab);
+        buildingDecorItems.add(item_wood_stairs);
+        buildingDecorItems.add(item_cobblestone_stairs);
+        buildingDecorItems.add(item_stone_brick_stairs);
+        buildingDecorItems.add(item_brick_stairs);
+        buildingDecorItems.add(item_nether_brick_stairs);
+        buildingDecorItems.add(item_sandstone_stairs);
+        buildingDecorItems.add(item_red_sandstone_stairs);
+        buildingDecorItems.add(item_nether_quartz_stairs);
+        buildingDecorItems.add(item_cobblestone_wall);
 
         // Redstone/Mechanism
 
@@ -650,6 +680,14 @@ public class BuildLists {
         Item item_prismarine_shard = new Item(R.drawable.prismarine_shard, "prismarine_shard");
         Item item_ink_sac = new Item(R.drawable.ink_sac, "ink_sac");
         Item item_wool = new Item(R.drawable.wool, "wool");
+        Item item_slime_block = new Item(R.drawable.slime_block, "slime_block");
+        Item item_block_of_redstone = new Item(R.drawable.block_of_redstone, "block_of_redstone");
+        Item item_emerald = new Item(R.drawable.emerald, "emerald");
+        Item item_block_of_emerald = new Item(R.drawable.block_of_emerald, "block_of_emerald");
+        Item item_lapis_lazuli = new Item(R.drawable.lapis_lazuli, "lapis_lazuli");
+        Item item_lapis_lazuli_block = new Item(R.drawable.lapis_lazuli_block, "lapis_lazuli_block");
+        Item item_snowball = new Item(R.drawable.snowball, "snowball");
+        Item item_snow = new Item(R.drawable.snow, "snow");
 
         ItemMap.idResMap.put(R.drawable.flint, item_flint);
         ItemMap.idResMap.put(R.drawable.coal, item_coal);
@@ -685,6 +723,14 @@ public class BuildLists {
         ItemMap.idResMap.put(R.drawable.prismarine_shard, item_prismarine_shard);
         ItemMap.idResMap.put(R.drawable.ink_sac, item_ink_sac);
         ItemMap.idResMap.put(R.drawable.wool, item_wool);
+        ItemMap.idResMap.put(R.drawable.slime_block, item_slime_block);
+        ItemMap.idResMap.put(R.drawable.block_of_redstone, item_block_of_redstone);
+        ItemMap.idResMap.put(R.drawable.emerald, item_emerald);
+        ItemMap.idResMap.put(R.drawable.block_of_emerald, item_block_of_emerald);
+        ItemMap.idResMap.put(R.drawable.lapis_lazuli, item_lapis_lazuli);
+        ItemMap.idResMap.put(R.drawable.lapis_lazuli_block, item_lapis_lazuli_block);
+        ItemMap.idResMap.put(R.drawable.snowball, item_snowball);
+        ItemMap.idResMap.put(R.drawable.snow, item_snow);
 
         materialsMiscItems.add(item_flint);
         materialsMiscItems.add(item_coal);
@@ -720,6 +766,15 @@ public class BuildLists {
         materialsMiscItems.add(item_prismarine_shard);
         materialsMiscItems.add(item_ink_sac);
         materialsMiscItems.add(item_wool);
+        materialsMiscItems.add(item_slime_block);
+        materialsMiscItems.add(item_block_of_redstone);
+        materialsMiscItems.add(item_emerald);
+        materialsMiscItems.add(item_block_of_emerald);
+        materialsMiscItems.add(item_lapis_lazuli);
+        materialsMiscItems.add(item_lapis_lazuli_block);
+        materialsMiscItems.add(item_snowball);
+        materialsMiscItems.add(item_snow);
+
     }
     public ArrayList<Item> getBuildingDecorItems() {
         return buildingDecorItems;
